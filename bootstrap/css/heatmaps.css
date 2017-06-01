@@ -1,0 +1,24 @@
+.button {
+    background-color: green;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: orange;
+}
+
+.heatmap-button {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    font-size: 12px;
+}
+
+#button-heatmaps {
+    background-color: red;
+}

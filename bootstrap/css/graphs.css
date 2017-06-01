@@ -1,0 +1,511 @@
+.always-invisible {
+    display: none;
+}
+
+.button {
+    background-color: green;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+}
+
+.floor-button {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    font-size: 12px;
+}
+
+.button:hover {
+    background-color: orange;
+}
+
+#button-graphs {
+    background-color: red;
+}
+
+.vis {
+    text-align: center;
+    min-width: 1100px;
+}
+
+.lines-general {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}
+
+.prox-lines {
+    fill: none;
+    stroke-width: 1.5px;
+}
+
+#general-line,
+#general-brush-line {
+    stroke: steelblue;
+}
+
+#general-line-1,
+#general-brush-line-1 {
+    stroke: steelblue;
+}
+
+#general-F_1_Z_8A-text {
+    color: steelblue;
+}
+
+#general-line-2,
+#general-brush-line-2 {
+    stroke: orange;
+}
+
+#general-F_2_Z_2-text {
+    color: orange;
+}
+
+#general-line-3,
+#general-brush-line-3 {
+    stroke: red;
+}
+
+#general-F_2_Z_4-text {
+    color: red;
+}
+
+#general-line-4,
+#general-brush-line-4 {
+    stroke: green;
+}
+
+#general-F_3_Z_1-text {
+    color: green;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.x.axis text {
+    font: 10px sans-serif;
+}
+
+.y.axis text {
+    font: 12px sans-serif;
+}
+
+.brush .extent {
+    stroke: #fff;
+    fill-opacity: .125;
+    shape-rendering: crispEdges;
+}
+
+.lines-f1 {
+    fill: none;
+    stroke-width: 1.5px;
+}
+
+.f1-general {
+    stroke: #a6cee3;
+}
+
+.f1-zone1 {
+    stroke: #1f78b4;
+}
+
+.f1-zone2 {
+    stroke: #b2df8a;
+}
+
+.f1-zone3 {
+    stroke: #33a02c;
+}
+
+.f1-zone4 {
+    stroke: #fb9a99;
+}
+
+.f1-zone5 {
+    stroke: #e31a1c;
+}
+
+.f1-zone7 {
+    stroke: #fdbf6f;
+}
+
+.f1-zone8a {
+    stroke: #ff7f00;
+}
+
+.f1-zone8b {
+    stroke: #cab2d6;
+}
+
+#f1-zone1-text {
+    color: #1f78b4;
+}
+
+#f1-zone2-text {
+    color: #b2df8a;
+}
+
+#f1-zone3-text {
+    color: #33a02c;
+}
+
+#f1-zone4-text {
+    color: #fb9a99;
+}
+
+#f1-zone5-text {
+    color: #e31a1c;
+}
+
+#f1-zone6-text {
+    color: #858585;
+}
+
+#f1-zone7-text {
+    color: #fdbf6f;
+}
+
+#f1-zone8a-text {
+    color: #ff7f00;
+}
+
+#f1-zone8b-text {
+    color: #cab2d6;
+}
+
+.lines-f2 {
+    fill: none;
+    stroke-width: 1.5px;
+}
+
+.f2-general {
+    stroke: steelblue;
+}
+
+.f2-zone1 {
+    stroke: #FFCC00;
+}
+
+#f2-zone1-text {
+    color: #FFCC00;
+}
+
+.f2-zone2 {
+    stroke: #FF6600;
+}
+
+#f2-zone2-text {
+    color: #FF6600;
+}
+
+.f2-zone3 {
+    stroke: #99CC00;
+}
+
+#f2-zone3-text {
+    color: #99CC00;
+}
+
+.f2-zone4 {
+    stroke: #FF9966;
+}
+
+#f2-zone4-text {
+    color: #FF9966;
+}
+
+.f2-zone5 {
+    stroke: #CC0033;
+}
+
+#f2-zone5-text {
+    color: #CC0033;
+}
+
+.f2-zone6 {
+    stroke: #CCFF33;
+}
+
+#f2-zone6-text {
+    color: #CCFF33;
+}
+
+.f2-zone7 {
+    stroke: #333300;
+}
+
+#f2-zone7-text {
+    color: #333300;
+}
+
+.f2-zone8 {
+    stroke: #FFFF00;
+}
+
+#f2-zone8-text {
+    color: #FFFF00;
+}
+
+.f2-zone9 {
+    stroke: #FF3366;
+}
+
+#f2-zone9-text {
+    color: #FF3366;
+}
+
+.f2-zone10 {
+    stroke: #FF6699;
+}
+
+#f2-zone10-text {
+    color: #FF6699;
+}
+
+.f2-zone11 {
+    stroke: #336600;
+}
+
+#f2-zone11-text {
+    color: #336600;
+}
+
+.f2-zone12a {
+    stroke: #CC99CC;
+}
+
+#f2-zone12a-text {
+    color: #CC99CC;
+}
+
+.f2-zone12b {
+    stroke: #660066;
+}
+
+#f2-zone12b-text {
+    color: #660066;
+}
+
+.f2-zone12c {
+    stroke: #FF99FF;
+}
+
+#f2-zone12c-text {
+    color: #FF99FF;
+}
+
+#f2-zone13-text {
+    color: #858585;
+}
+
+.f2-zone14 {
+    stroke: #66FFFF;
+}
+
+#f2-zone14-text {
+    color: #66FFFF;
+}
+
+.f2-zone15 {
+    stroke: #6666CC;
+}
+
+#f2-zone15-text {
+    color: #6666CC;
+}
+
+.f2-zone16 {
+    stroke: #0000FF;
+}
+
+#f2-zone16-text {
+    color: #0000FF;
+}
+
+.lines-f3 {
+    fill: none;
+    stroke-width: 1.5px;
+}
+
+.f3-general {
+    stroke: steelblue;
+}
+
+.f3-zone1 {
+    stroke: #a6cee3;
+}
+
+#f3-zone1-text {
+    color: #a6cee3;
+}
+
+.f3-zone2 {
+    stroke: #1f78b4;
+}
+
+#f3-zone2-text {
+    color: #1f78b4;
+}
+
+.f3-zone3 {
+    stroke: #b2df8a;
+}
+
+#f3-zone3-text {
+    color: #b2df8a;
+}
+
+#f3-zone4-text {
+    color: #858585;
+}
+
+.f3-zone5 {
+    stroke: #33a02c;
+}
+
+#f3-zone5-text {
+    color: #33a02c;
+}
+
+.f3-zone6 {
+    stroke: #fb9a99;
+}
+
+#f3-zone6-text {
+    color: #fb9a99;
+}
+
+.f3-zone7 {
+    stroke: #e31a1c;
+}
+
+#f3-zone7-text {
+    color: #e31a1c;
+}
+
+.f3-zone8 {
+    stroke: #fdbf6f;
+}
+
+#f3-zone8-text {
+    color: #fdbf6f;
+}
+
+.f3-zone9 {
+    stroke: #ff7f00;
+}
+
+#f3-zone9-text {
+    color: #ff7f00;
+}
+
+.f3-zone10 {
+    stroke: #cab2d6;
+}
+
+#f3-zone10-text {
+    color: #cab2d6;
+}
+
+.f3-zone11a {
+    stroke: #6a3d9a;
+}
+
+#f3-zone11a-text {
+    color: #6a3d9a;
+}
+
+.f3-zone11b {
+    stroke: #ffff00;
+}
+
+#f3-zone11b-text {
+    color: #ffff00;
+}
+
+.f3-zone11c {
+    stroke: #b15928;
+}
+
+#f3-zone11c-text {
+    color: #b15928;
+}
+
+.f3-zone12 {
+    stroke: #660033;
+}
+
+#f3-zone12-text {
+    color: #660033;
+}
+
+.color1-text {
+    color: #1F77B4;
+}
+
+.color2-text {
+    color: #FF7F0E;
+}
+
+.color3-text {
+    color: #2CA02C;
+}
+
+.color4-text {
+    color: #D62728;
+}
+
+.color5-text {
+    color: #9467BD;
+}
+
+.color6-text {
+    color: #8C564B;
+}
+
+.color7-text {
+    color: #E377C2;
+}
+
+.color8-text {
+    color: #7F7F7F;
+}
+
+.slider .handle {
+    fill: #fff;
+    stroke: #000;
+    stroke-opacity: .5;
+    stroke-width: 1.25px;
+    cursor: crosshair;
+}
+
+.slider-axis {
+    font: 10px sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.slider-axis .domain {
+    fill: none;
+    stroke: #000;
+    stroke-opacity: .3;
+    stroke-width: 10px;
+    stroke-linecap: round;
+}
+
+.slider-axis .halo {
+    fill: none;
+    stroke: #ddd;
+    stroke-width: 8px;
+    stroke-linecap: round;
+}

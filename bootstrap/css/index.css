@@ -1,0 +1,26 @@
+.button {
+    background-color: green;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: orange;
+}
+
+#button-index {
+    background-color: red;
+}
+
+p {
+    word-wrap: break-word;
+    width: 500px;
+    text-align: justify;
+}
+
+#content {
+    width: 600px;
+}

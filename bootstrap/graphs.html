@@ -1,0 +1,420 @@
+<!DOCTYPE HTML>
+<!--
+    Prologue by HTML5 UP
+    html5up.net | @n33co
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Gosia's Warriors</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" href="images/warriors.ico">
+        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/graphs.css">
+        <link rel="stylesheet" type="text/css" href="css/parallelCoordinates.css">
+        <link rel="stylesheet" type="text/css" href="css/parallel-lineGraph.css">
+        <script src="js/d3.min.js"></script>
+        <script src="js/d3-queue.min.js"></script>
+        <script src="js/jquery-2.2.2.min.js"></script>
+        <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    </head>
+    <body>
+
+        <!-- Header -->
+            <div id="header">
+
+                <div class="top">
+
+                    <!-- Logo -->
+                        <div id="logo">
+                            <span class="image avatar48"><img src="images/groep.png" alt="" /></span>
+                            <h1 id="title">Gosia's Warriors</h1>
+                            <p>VAST challenge 2016</p>
+                        </div>
+
+                    <!-- Nav -->
+                        <nav id="nav">
+                            <!--
+
+                                Prologue's nav expects links in one of two formats:
+
+                                1. Hash link (scrolls to a different section within the page)
+
+                                   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+                                2. Standard link (sends the user to another page/site)
+
+                                   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+                            -->
+                            <ul>
+                                <li><a href="index2.html" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About the challenge</span></a></li>
+                                <li><a href="graphs.html" class="skel-layers-ignoreHref"><span class="icon fa-line-chart">Graphs</span></a></li>
+                                <li><a href="heatmaps.html" class="skel-layers-ignoreHref"><span class="icon fa-fire">Heatmaps</span></a></li>      
+                                <li><a href="index_findings.html" class="skel-layers-ignoreHref"><span class="icon fa-balance-scale">findings</span></a></li>
+                            </ul>
+                        </nav>
+
+                </div>
+
+                <div class="bottom">
+
+                    <!-- Social Icons -->
+                        <ul class="icons">
+                            <li><a href="https://github.com/popoiopo/Gosia-warriors" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
+                        </ul>
+
+                </div>
+
+            </div>
+
+        <!-- Main -->
+            <div id="main">
+
+                    <section id="top" class="one dark cover">
+                        <div class="container">
+                            <br />
+                            <header>
+                                <h2 class="alt"><strong>Graphs</strong> <br /> <p class="header_info" id="graph_heater">Here we see three different graphs. The first graph represents the data from the HVAC zones, the second represents data from the proximity zones, and the third is a parallel coordinates graph representing the amount of times each employee is spotted by the proximity sensors. When pressed on a line (an employee) a heatmap of the zones is depicted next to the parallel coordinates graph that shows how many times that specific employee has been spotted in each zone on the chosen floor.</p>
+                            </header>
+                        </div>
+                    </section>             
+
+                    <!-- findings -->
+                    <section id="findings" class="three">
+                        <div class="container"> 
+
+                            <center>
+                                <div id="floor-graphs-buttons">
+                                    <button id="floor-button-general" class="floor-button" type="button" value="general" number="0">General</button>
+                                    <button id="floor-button-floor-1" class="floor-button" type="button" value="floor-1" number="1">Floor 1</button>
+                                    <button id="floor-button-floor-2" class="floor-button" type="button" value="floor-2" number="2">Floor 2</button>
+                                    <button id="floor-button-floor-3" class="floor-button" type="button" value="floor-3" number="3">Floor 3</button>
+                                </div>
+                                <br />
+                                <p id="current-visible-floor" class="always-invisible"></p>
+                                <img id="loading-icon" src="img/loading.gif" alt="Loading..."></img>
+                            </center>
+
+                            <br />
+
+                            <img id="wewantyou" src="images/dontpush.jpg" alt="" style="display: none"></img> 
+
+                            <center>
+                                <div id="floor-graphs-general" class="floor-graphs-div">
+                                    <div id="general-div" class="vis">
+                                        <h2>General readings</h2>
+                                        <select id="general-dropdown" name="sensors">
+                                            <option value="coolScheduleValue" unit="C" selected>COOL Schedule Value</option>
+                                            <option value="deliFanPower" unit="W">DELI-FAN Power</option>
+                                            <option value="drybulbTemperature" unit="C">Drybulb Temperature</option>
+                                            <option value="loopTempSchedule" unit="C">Loop Temp Schedule</option>
+                                            <option value="heatScheduleValue" unit="C">HEAT Schedule Value</option>
+                                            <option value="hvacElectricDemandPower" unit="W">HVAC Electric Demand Power</option>
+                                            <option value="pumpPower" unit="W">Pump Power</option>
+                                            <option value="supplySideInletMassFlowRate" unit="kg/s">Supply Side Inlet Mass Flow Rate</option>
+                                            <option value="supplySideInletTemperature" unit="C">Supply Side Inlet Temperature</option>
+                                            <option value="supplySideOutletTemperature" unit="C">Supply Side Outlet Temperature</option>
+                                            <option value="totalElectricDemandPower" unit="W">Total Electric Demand Power</option>
+                                            <option value="waterHeaterGasRate" unit="W">Water Heater Gas Rate</option>
+                                            <option value="waterHeaterSetpoint" unit="C">Water Heater Setpoint</option>
+                                            <option value="waterHeaterTankTemperature" unit="C">Water Heater Tank Temperature</option>
+                                            <option value="windDirection" unit="deg">Wind Direction</option>
+                                            <option value="windSpeed" unit="m/s">Wind Speed</option>
+                                            <option value="haziumData" unit="ppm">Hazium Concentrations</options>
+                                        </select>
+                                        <br/><br/>
+                                        <div id="hazium-checkboxes">
+                                            <label for="F_1_Z_8A"><input type="checkbox" id="general-checkbox-line-1" class="general-hazium-checkbox" value="line-1" checked/> <span id="general-F_1_Z_8A-text">Floor 1 Zone 8A</span></label>
+                                            <label for="F_2_Z_2"><input type="checkbox" id="general-checkbox-line-2" class="general-hazium-checkbox" value="line-2" checked/> <span id="general-F_2_Z_2-text">Floor 2 Zone 2</span></label>
+                                            <label for="F_2_Z_4"><input type="checkbox" id="general-checkbox-line-3" class="general-hazium-checkbox"  value="line-3" checked/> <span id="general-F_2_Z_4-text">Floor 2 Zone 4</span></label>
+                                            <label for="F_3_Z_1"><input type="checkbox" id="general-checkbox-line-4" class="general-hazium-checkbox" value="line-4" checked/> <span id="general-F_3_Z_1-text">Floor 3 Zone 1</span></label>
+                                        </div>
+                                        <h3 id="general-vis-info"></h3>
+                                    </div>
+                                    <div id="fixed-prox-div-general">
+                                        <h3>Fixed prox data - Building</h3>
+                                        <div id="general-checkboxes" class="checkboxes">
+                                            <label for="floor1"><input type="checkbox" id="prox-f1" class="prox-checkbox" value = "general_floor_1" name = "general_floor_1_slider" checked/> <span id="f1-text" class="color1-text">Floor 1</span></label>
+                                            <label for="floor2"><input type="checkbox" id="prox-f2" class="prox-checkbox" value = "general_floor_2" name = "general_floor_2_slider" checked/> <span id="f2-text" class="color2-text">Floor 2</span></label>
+                                            <label for="floor3"><input type="checkbox" id="prox-f3" class="prox-checkbox" value = "general_floor_3" name = "general_floor_3_slider" checked/> <span id="f3-text" class="color3-text">Floor 3</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="floor-graphs-floor-1" class="floor-graphs-div">
+                                    <div id="f1-div" class="vis">
+                                        <h2>Floor 1 readings</h2>
+                                        <div id="f1-dropdown">
+                                            <select id="f1-sensors" name="sensors">
+                                                <option value="f1lightsPower" unit="W" selected>Lights Power</option><!-- niet zone 6-->
+                                                <option value="f1equipmentPower" unit="W">Equipment Power</option><!-- niet zone 6-->
+                                                <option value="f1thermostatTemp" unit="C">Thermostat Temp</option><!-- niet zone 6-->
+                                                <option value="f1thermostatHeatingSetpoint" unit="C">Thermostat Heating Setpoint</option><!-- niet zone 6-->
+                                                <option value="f1thermostatCoolingSetpoint" unit="C">Thermostat Cooling Setpoint</option><!-- niet zone 6-->
+                                                <option value="f1vavAvailabilityManagerNightCycleControlStatus" unit="on/off">VAV Availability Manager Night Cycle Control Status</option><!-- no zone-->
+                                                <option value="f1vavSysSupplyFanFanPower" unit="W">VAV_SYS SUPPLY FAN:Fan Power</option><!-- no zone-->
+                                                <option value="f1bathExhaustFanPower" unit="W">BATH_EXHAUST:Fan Power</option><!-- no zone-->
+                                                <option value="f1vavReheatDamperPosition" unit="%">VAV REHEAT Damper Position</option><!-- niet zone 6-->
+                                                <option value="f1reheatCoilPower" unit="W">REHEAT COIL Power</option><!-- niet zone 6-->
+                                                <option value="f1vavSysHeatingCoilPower" unit="W">VAV_SYS HEATING COIL Power</option><!-- no zone-->
+                                                <option value="f1vavSysOutdoorAirFlowFraction" unit="%">VAV_SYS Outdoor Air Flow Fraction</option><!-- no zone-->
+                                                <option value="f1vavSysOutdoorAirMassFlowRate" unit="kg/s">VAV_SYS Outdoor Air Mass Flow Rate</option><!-- no zone-->
+                                                <option value="f1vavSysCoolingCoilPower" unit="W">VAV_SYS COOLING COIL Power</option><!-- no zone-->
+                                                <option value="f1vavSysAirLoopInletTemperature" unit="C">VAV_SYS AIR LOOP INLET Temperature</option><!-- no zone-->
+                                                <option value="f1vavSysAirLoopInletMassFlowRate" unit="kg/s">VAV_SYS AIR LOOP INLET Mass Flow Rate</option><!-- no zone-->
+                                                <option value="f1vavSysSupplyFanOutletTemperature" unit="C">VAV_SYS SUPPLY FAN OUTLET Temperature</option><!-- no zone-->
+                                                <option value="f1vavSysSupplyFanOutletMassFlowRate" unit="kg/s">VAV_SYS SUPPLY FAN OUTLET Mass Flow Rate</option><!-- no zone-->
+                                                <option value="f1returnOutletCo2Concentration" unit="ppm">RETURN OUTLET CO2 Concentration</option><!-- niet zone 6-->
+                                                <option value="f1supplyInletTemperature" unit="C">SUPPLY INLET Temperature</option><!-- niet zone 6-->
+                                                <option value="f1supplyInletMassFlowRate" unit="kg/s">SUPPLY INLET Mass Flow Rate</option><!-- niet zone 6-->
+                                                <option value="f1mechanicalVentilationMassFlowRate" unit="kg/s">Mechanical Ventilation Mass Flow Rate</option><!-- alleen zone 1-->
+                                            </select>
+                                        </div>
+                                        <br>
+                                        <div id="f1-checkboxes">
+                                            <label for="zone1"><input type="checkbox" id="f1-zone1" class="f1-zone-checkbox" checked/> <span id="f1-zone1-text">Zone 1</span></label>
+                                            <label for="zone2"><input type="checkbox" id="f1-zone2" class="f1-zone-checkbox" checked/> <span id="f1-zone2-text">Zone 2</span></label>
+                                            <label for="zone3"><input type="checkbox" id="f1-zone3" class="f1-zone-checkbox" checked/> <span id="f1-zone3-text">Zone 3</span></label>
+                                            <label for="zone4"><input type="checkbox" id="f1-zone4" class="f1-zone-checkbox" checked/> <span id="f1-zone4-text">Zone 4</span></label>
+                                            <label for="zone5"><input type="checkbox" id="f1-zone5" class="f1-zone-checkbox" checked/> <span id="f1-zone5-text">Zone 5</span></label>
+                                            <label for="zone6"><input type="checkbox" id="f1-zone6" class="f1-zone-checkbox" disabled/> <span id="f1-zone6-text">Zone 6</span></label>
+                                            <label for="zone7"><input type="checkbox" id="f1-zone7" class="f1-zone-checkbox" checked/> <span id="f1-zone7-text">Zone 7</span></label>
+                                            <label for="zone8a"><input type="checkbox" id="f1-zone8a" class="f1-zone-checkbox" checked/> <span id="f1-zone8a-text">Zone 8a</span></label>
+                                            <label for="zone8b"><input type="checkbox" id="f1-zone8b" class="f1-zone-checkbox" checked/> <span id="f1-zone8b-text">Zone 8b</span></label>
+                                        </div>
+                                        <h3 id="f1-vis-info"></h3>
+                                    </div>
+                                    <div id="fixed-prox-div-floor-1">
+                                        <h3>Fixed prox data - Floor 1</h3>
+                                        <div id="f1-prox-checkboxes" class="checkboxes">
+                                            <label for="zone1"><input type="checkbox" id="f1-prox-zone1" class="prox-checkbox" value = "svg_1_zone_1" name = "svg_1_zone_1_slider" checked/> <span id="f1-prox-zone1-text" class="color1-text">Zone 1</span></label>
+                                            <label for="zone2"><input type="checkbox" id="f1-prox-zone2" class="prox-checkbox" value = "svg_1_zone_2" name = "svg_1_zone_2_slider" checked/> <span id="f1-prox-zone2-text" class="color2-text">Zone 2</span></label>
+                                            <label for="zone3"><input type="checkbox" id="f1-prox-zone3" class="prox-checkbox" value = "svg_1_zone_3" name = "svg_1_zone_3_slider" checked/> <span id="f1-prox-zone3-text" class="color3-text">Zone 3</span></label>
+                                            <label for="zone4"><input type="checkbox" id="f1-prox-zone4" class="prox-checkbox" value = "svg_1_zone_4" name = "svg_1_zone_4_slider" checked/> <span id="f1-prox-zone4-text" class="color4-text">Zone 4</span></label>
+                                            <label for="zone5"><input type="checkbox" id="f1-prox-zone5" class="prox-checkbox" value = "svg_1_zone_5" name = "svg_1_zone_5_slider" checked/> <span id="f1-prox-zone5-text" class="color5-text">Zone 5</span></label>
+                                            <label for="zone6"><input type="checkbox" id="f1-prox-zone6" class="prox-checkbox" value = "svg_1_zone_6" name = "svg_1_zone_6_slider" checked/> <span id="f1-prox-zone6-text" class="color6-text">Zone 6</span></label>
+                                            <label for="zone7"><input type="checkbox" id="f1-prox-zone7" class="prox-checkbox" value = "svg_1_zone_7" name = "svg_1_zone_7_slider" checked/> <span id="f1-prox-zone7-text" class="color7-text">Zone 7</span></label>
+                                            <label for="zone8"><input type="checkbox" id="f1-prox-zone8" class="prox-checkbox" value = "svg_1_zone_8" name = "svg_1_zone_8_slider" checked/> <span id="f1-prox-zone8-text" class="color8-text">Zone 8</span></label>
+                                        </div>
+                                    </div>
+                                    <div id="parallel-coordinates-floor-1">
+                                        <h3>Number of detections per person</h3>
+                                        <div id="wrapper-floor-1" class="wrapper">
+                                            <div id="first-floor-1" class="first">
+                                                <svg id = "parallel_1"></svg>
+                                            </div>
+                                            <div id="second-floor-1" class="second">
+                                                <div id="table-floor-1" class="table">
+                                                    <div id="box-floor-1" class="box">
+                                                        <p>Floor: <span id="floortext-floor-1" class="info"></span></p>
+                                                        <p>Proxid: <span id="proxidtext-floor-1" class="info"></span></p>
+                                                        <p>Mean detections per day: <span id="detectionstext-floor-1" class="info"></span></p>
+                                                    </div>
+                                                </div>
+                                                <div id="heatie-floor-1" class="heatie"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="floor-graphs-floor-2" class="floor-graphs-div">
+                                    <div id="f2-div" class="vis">
+                                        <h2>Floor 2 readings</h2>
+                                        <div id="f2-dropdown">
+                                            <select id="f2-sensors" name="sensors">
+                                                <option value="f2lightsPower" unit="W" selected>Lights Power</option><!-- niet zone 13-->
+                                                <option value="f2equipmentPower" unit="W">Equipment Power</option><!-- niet zone 13-->
+                                                <option value="f2thermostatTemp" unit="C">Thermostat Temp</option><!-- niet zone 13-->
+                                                <option value="f2thermostatHeatingSetpoint" unit="C">Thermostat Heating Setpoint</option><!-- niet zone 13-->
+                                                <option value="f2thermostatCoolingSetpoint" unit="C">Thermostat Cooling Setpoint</option><!-- niet zone 13-->
+                                                <option value="f2vavSysSupplyFanFanPower" unit="W">VAV_SYS SUPPLY FAN:Fan Power</option><!-- no zone-->
+                                                <option value="f2bathExhaustFanPower" unit="W">BATH_EXHAUST:Fan Power</option><!-- no zone-->
+                                                <option value="f2vavReheatDamperPosition" unit="%">VAV REHEAT Damper Position</option><!-- niet zone 13-->
+                                                <option value="f2reheatCoilPower" unit="W">REHEAT COIL Power</option><!-- niet zone 13-->
+                                                <option value="f2vavSysHeatingCoilPower" unit="W">VAV_SYS HEATING COIL Power</option><!-- no zone-->
+                                                <option value="f2vavSysOutdoorAirFlowFraction" unit="%">VAV_SYS Outdoor Air Flow Fraction</option><!-- no zone-->
+                                                <option value="f2vavSysOutdoorAirMassFlowRate" unit="kg/s">VAV_SYS Outdoor Air Mass Flow Rate</option><!-- no zone-->
+                                                <option value="f2vavSysCoolingCoilPower" unit="W">VAV_SYS COOLING COIL Power</option><!-- no zone-->
+                                                <option value="f2vavSysAirLoopInletTemperature" unit="C">VAV_SYS AIR LOOP INLET Temperature</option><!-- no zone-->
+                                                <option value="f2vavSysAirLoopInletMassFlowRate" unit="kg/s">VAV_SYS AIR LOOP INLET Mass Flow Rate</option><!-- no zone-->
+                                                <option value="f2vavSysSupplyFanOutletTemperature" unit="C">VAV_SYS SUPPLY FAN OUTLET Temperature</option><!-- no zone-->
+                                                <option value="f2vavSysSupplyFanOutletMassFlowRate" unit="kg/s">VAV_SYS SUPPLY FAN OUTLET Mass Flow Rate</option><!-- no zone-->
+                                                <option value="f2returnOutletCo2Concentration" unit="ppm">RETURN OUTLET CO2 Concentration</option><!-- niet zone 13-->
+                                                <option value="f2supplyInletTemperature" unit="C">SUPPLY INLET Temperature</option><!-- niet zone 13-->
+                                                <option value="f2supplyInletMassFlowRate" unit="kg/s">SUPPLY INLET Mass Flow Rate</option><!-- niet zone 13-->
+                                                <option value="f2vavAvailabilityManagerNightCycleControlStatus" unit="on/off">VAV Availability Manager Night Cycle Control Status</option><!-- no zone-->
+                                            </select>
+                                        </div>
+                                        <br>
+                                        <div id="f2-checkboxes">
+                                            <label for="zone1"><input type="checkbox" id="f2-zone1" class="f2-zone-checkbox" checked/> <span id="f2-zone1-text">Zone 1</span></label>
+                                            <label for="zone2"><input type="checkbox" id="f2-zone2" class="f2-zone-checkbox" checked/> <span id="f2-zone2-text">Zone 2</span></label>
+                                            <label for="zone3"><input type="checkbox" id="f2-zone3" class="f2-zone-checkbox" checked/> <span id="f2-zone3-text">Zone 3</span></label>
+                                            <label for="zone4"><input type="checkbox" id="f2-zone4" class="f2-zone-checkbox" checked/> <span id="f2-zone4-text">Zone 4</span></label>
+                                            <label for="zone5"><input type="checkbox" id="f2-zone5" class="f2-zone-checkbox" checked/> <span id="f2-zone5-text">Zone 5</span></label>
+                                            <label for="zone6"><input type="checkbox" id="f2-zone6" class="f2-zone-checkbox" checked/> <span id="f2-zone6-text">Zone 6</span></label>
+                                            <label for="zone7"><input type="checkbox" id="f2-zone7" class="f2-zone-checkbox" checked/> <span id="f2-zone7-text">Zone 7</span></label>
+                                            <label for="zone8"><input type="checkbox" id="f2-zone8" class="f2-zone-checkbox" checked/> <span id="f2-zone8-text">Zone 8</span></label>
+                                            <label for="zone9"><input type="checkbox" id="f2-zone9" class="f2-zone-checkbox" checked/> <span id="f2-zone9-text">Zone 9</span></label>
+                                            <label for="zone10"><input type="checkbox" id="f2-zone10" class="f2-zone-checkbox" checked/> <span id="f2-zone10-text">Zone 10</span></label>
+                                            <label for="zone11"><input type="checkbox" id="f2-zone11" class="f2-zone-checkbox" checked/> <span id="f2-zone11-text">Zone 11</span></label>
+                                            <label for="zone12a"><input type="checkbox" id="f2-zone12a" class="f2-zone-checkbox" checked/> <span id="f2-zone12a-text">Zone 12a</span></label>
+                                            <label for="zone12b"><input type="checkbox" id="f2-zone12b" class="f2-zone-checkbox" checked/> <span id="f2-zone12b-text">Zone 12b</span></label>
+                                            <label for="zone12c"><input type="checkbox" id="f2-zone12c" class="f2-zone-checkbox" checked/> <span id="f2-zone12c-text">Zone 12c</span></label>
+                                            <label for="zone13"><input type="checkbox" id="f2-zone13" class="f2-zone-checkbox" disabled/> <span id="f2-zone13-text">Zone 13</span></label>
+                                            <label for="zone14"><input type="checkbox" id="f2-zone14" class="f2-zone-checkbox" checked/> <span id="f2-zone14-text">Zone 14</span></label>
+                                            <label for="zone15"><input type="checkbox" id="f2-zone15" class="f2-zone-checkbox" checked/> <span id="f2-zone15-text">Zone 15</span></label>
+                                            <label for="zone16"><input type="checkbox" id="f2-zone16" class="f2-zone-checkbox" checked/> <span id="f2-zone16-text">Zone 16</span></label>
+                                        </div>
+                                        <h3 id="f2-vis-info"></h3>
+                                    </div>
+                                    <div id="fixed-prox-div-floor-2">
+                                        <h3>Fixed prox data - Floor 2</h3>
+                                        <div id="f2-checkboxes" class="checkboxes">
+                                            <label for="zone1"><input type="checkbox" id="f2-zone1" class="prox-checkbox" value = "svg_2_zone_1" name = "svg_2_zone_1_slider" checked/> <span id="f2-prox-zone1-text" class="color1-text">Zone 1</span></label>
+                                            <label for="zone2"><input type="checkbox" id="f2-zone2" class="prox-checkbox" value = "svg_2_zone_2" name = "svg_2_zone_2_slider" checked/> <span id="f2-prox-zone2-text" class="color2-text">Zone 2</span></label>
+                                            <label for="zone3"><input type="checkbox" id="f2-zone3" class="prox-checkbox" value = "svg_2_zone_3" name = "svg_2_zone_3_slider" checked/> <span id="f2-prox-zone3-text" class="color3-text">Zone 3</span></label>
+                                            <label for="zone4"><input type="checkbox" id="f2-zone4" class="prox-checkbox" value = "svg_2_zone_4" name = "svg_2_zone_4_slider" checked/> <span id="f2-prox-zone4-text" class="color4-text">Zone 4</span></label>
+                                            <label for="zone5"><input type="checkbox" id="f2-zone5" class="prox-checkbox" value = "svg_2_zone_5" name = "svg_2_zone_5_slider" checked/> <span id="f2-prox-zone5-text" class="color5-text">Zone 5</span></label>
+                                            <label for="zone6"><input type="checkbox" id="f2-zone6" class="prox-checkbox" value = "svg_2_zone_6" name = "svg_2_zone_6_slider" checked/> <span id="f2-prox-zone6-text" class="color6-text">Zone 6</span></label>
+                                            <label for="zone7"><input type="checkbox" id="f2-zone7" class="prox-checkbox" value = "svg_2_zone_7" name = "svg_2_zone_7_slider" checked/> <span id="f2-prox-zone7-text" class="color7-text">Zone 7</span></label>
+                                        </div>
+                                    </div>
+                                    <div id="parallel-coordinates-floor-2">
+                                        <h3>Number of detections per person</h3>
+                                        <div id="wrapper-floor-2" class="wrapper">
+                                            <div id="first-floor-2" class="first">
+                                                <svg id = "parallel_2"></svg>
+                                            </div>
+                                            <div id="second-floor-2" class="second">
+                                                <div id="table-floor-2" class="table">
+                                                    <div id="box-floor-2" class="box">
+                                                        <p>Floor: <span id="floortext-floor-2" class="info"></span></p>
+                                                        <p>Proxid: <span id="proxidtext-floor-2" class="info"></span></p>
+                                                        <p>Mean detections per day: <span id="detectionstext-floor-2" class="info"></span></p>
+                                                    </div>
+                                                </div>
+                                                <div id="heatie-floor-2" class="heatie"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="floor-graphs-floor-3" class="floor-graphs-div">
+                                    <div id="f3-div" class="vis">
+                                        <h2>Floor 3 readings</h2>
+                                        <div id="f3-dropdown">
+                                            <select id="f3-sensors" name="sensors">
+                                                <!-- ZONE 12 ALLEEN REHEAT COIL POWER-->
+                                                <!-- ZONE 9 GEEN REHEAT COIL POWER, MAAR DE REST WEL-->
+                                                <!-- ZONE 4 KOMT HELEMAAL NIET VOOR-->
+                                                <option value="f3lightsPower" unit="W" selected>Lights Power</option><!-- niet zones 4 en 12-->
+                                                <option value="f3equipmentPower" unit="W">Equipment Power</option><!-- niet zones 4 en 12-->
+                                                <option value="f3thermostatTemp" unit="C">Thermostat Temp</option><!-- niet zones 4 en 12-->
+                                                <option value="f3thermostatHeatingSetpoint" unit="C">Thermostat Heating Setpoint</option><!-- niet zones 4 en 12-->
+                                                <option value="f3thermostatCoolingSetpoint" unit="C">Thermostat Cooling Setpoint</option><!-- niet zones 4 en 12-->
+                                                <option value="f3vavSysSupplyFanFanPower" unit="W">VAV_SYS SUPPLY FAN:Fan Power</option><!-- no zone-->
+                                                <option value="f3bathExhaustFanPower" unit="W">BATH_EXHAUST:Fan Power</option><!-- no zone-->
+                                                <option value="f3vavReheatDamperPosition" unit="%">VAV REHEAT Damper Position</option><!-- niet zones 4 en 12-->
+                                                <option value="f3reheatCoilPower" unit="W">REHEAT COIL Power</option><!-- niet zones 4 en 9-->
+                                                <option value="f3vavSysHeatingCoilPower" unit="W">VAV_SYS HEATING COIL Power</option><!-- no zone-->
+                                                <option value="f3vavSysOutdoorAirFlowFraction" unit="%">VAV_SYS Outdoor Air Flow Fraction</option><!-- no zone-->
+                                                <option value="f3vavSysOutdoorAirMassFlowRate" unit="kg/s">VAV_SYS Outdoor Air Mass Flow Rate</option><!-- no zone-->
+                                                <option value="f3vavSysCoolingCoilPower" unit="W">VAV_SYS COOLING COIL Power</option><!-- no zone-->
+                                                <option value="f3vavSysAirLoopInletTemperature" unit="C">VAV_SYS AIR LOOP INLET Temperature</option><!-- no zone-->
+                                                <option value="f3vavSysAirLoopInletMassFlowRate" unit="kg/s">VAV_SYS AIR LOOP INLET Mass Flow Rate</option><!-- no zone-->
+                                                <option value="f3vavSysSupplyFanOutletTemperature" unit="C">VAV_SYS SUPPLY FAN OUTLET Temperature</option><!-- no zone-->
+                                                <option value="f3vavSysSupplyFanOutletMassFlowRate" unit="kg/s">VAV_SYS SUPPLY FAN OUTLET Mass Flow Rate</option><!-- no zone-->
+                                                <option value="f3returnOutletCo2Concentration" unit="ppm">RETURN OUTLET CO2 Concentration</option><!-- niet zones 4 en 12-->
+                                                <option value="f3supplyInletTemperature" unit="C">SUPPLY INLET Temperature</option><!-- niet zones 4 en 12-->
+                                                <option value="f3supplyInletMassFlowRate" unit="kg/s">SUPPLY INLET Mass Flow Rate</option><!-- niet zones 4 en 12-->
+                                                <option value="f3vavAvailabilityManagerNightCycleControlStatus" unit="on/off">VAV Availability Manager Night Cycle Control Status</option><!-- no zone-->
+                                            </select>
+                                        </div>
+                                        <br>
+                                        <div id="f3-checkboxes">
+                                            <label for="zone1"><input type="checkbox" id="f3-zone1" class="f3-zone-checkbox" checked/> <span id="f3-zone1-text">Zone 1</span></label>
+                                            <label for="zone2"><input type="checkbox" id="f3-zone2" class="f3-zone-checkbox" checked/> <span id="f3-zone2-text">Zone 2</span></label>
+                                            <label for="zone3"><input type="checkbox" id="f3-zone3" class="f3-zone-checkbox" checked/> <span id="f3-zone3-text">Zone 3</span></label>
+                                            <label for="zone4"><input type="checkbox" id="f3-zone4" class="f3-zone-checkbox" disabled/> <span id="f3-zone4-text">Zone 4</span></label>
+                                            <label for="zone5"><input type="checkbox" id="f3-zone5" class="f3-zone-checkbox" checked/> <span id="f3-zone5-text">Zone 5</span></label>
+                                            <label for="zone6"><input type="checkbox" id="f3-zone6" class="f3-zone-checkbox" checked/> <span id="f3-zone6-text">Zone 6</span></label>
+                                            <label for="zone7"><input type="checkbox" id="f3-zone7" class="f3-zone-checkbox" checked/> <span id="f3-zone7-text">Zone 7</span></label>
+                                            <label for="zone8"><input type="checkbox" id="f3-zone8" class="f3-zone-checkbox" checked/> <span id="f3-zone8-text">Zone 8</span></label>
+                                            <label for="zone9"><input type="checkbox" id="f3-zone9" class="f3-zone-checkbox" checked/> <span id="f3-zone9-text">Zone 9</span></label>
+                                            <label for="zone10"><input type="checkbox" id="f3-zone10" class="f3-zone-checkbox" checked/> <span id="f3-zone10-text">Zone 10</span></label>
+                                            <label for="zone11"><input type="checkbox" id="f3-zone11a" class="f3-zone-checkbox" checked/> <span id="f3-zone11a-text">Zone 11a</span></label>
+                                            <label for="zone12a"><input type="checkbox" id="f3-zone11b" class="f3-zone-checkbox" checked/> <span id="f3-zone11b-text">Zone 11b</span></label>
+                                            <label for="zone12b"><input type="checkbox" id="f3-zone11c" class="f3-zone-checkbox" checked/> <span id="f3-zone11c-text">Zone 11c</span></label>
+                                            <label for="zone12c"><input type="checkbox" id="f3-zone12" class="f3-zone-checkbox" checked/> <span id="f3-zone12-text">Zone 12</span></label>
+                                        </div>
+                                        <h3 id="f3-vis-info"></h3>
+                                    </div>
+                                    <div id="fixed-prox-div-floor-3">
+                                        <h3>Fixed prox data - Floor 3</h3>
+                                        <div id="f3-checkboxes" class="checkboxes">
+                                            <label for="zone1"><input type="checkbox" id="f3-zone1" class="prox-checkbox" value = "svg_3_zone_1" name = "svg_3_zone_1_slider" checked/> <span id="f3-prox-zone1-text" class="color1-text">Zone 1</span></label>
+                                            <label for="zone2"><input type="checkbox" id="f3-zone2" class="prox-checkbox" value = "svg_3_zone_2" name = "svg_3_zone_2_slider" checked/> <span id="f3-prox-zone2-text" class="color2-text">Zone 2</span></label>
+                                            <label for="zone3"><input type="checkbox" id="f3-zone3" class="prox-checkbox" value = "svg_3_zone_3" name = "svg_3_zone_3_slider" checked/> <span id="f3-prox-zone3-text" class="color3-text">Zone 3</span></label>
+                                            <label for="zone4"><input type="checkbox" id="f3-zone4" class="prox-checkbox" value = "svg_3_zone_4" name = "svg_3_zone_4_slider" checked/> <span id="f3-prox-zone4-text" class="color4-text">Zone 4</span></label>
+                                            <label for="zone5"><input type="checkbox" id="f3-zone5" class="prox-checkbox" value = "svg_3_zone_5" name = "svg_3_zone_5_slider" checked/> <span id="f3-prox-zone5-text" class="color5-text">Zone 5</span></label>
+                                            <label for="zone6"><input type="checkbox" id="f3-zone6" class="prox-checkbox" value = "svg_3_zone_6" name = "svg_3_zone_6_slider" checked/> <span id="f3-prox-zone6-text" class="color6-text">Zone 6</span></label>
+                                            <label for="ServerRoom"><input type="checkbox" id="f3-ServerRoom" class="prox-checkbox" value = "svg_3_zone_ServerRoom" name = "svg_3_zone_ServerRoom_slider" checked/> <span id="f3-prox-ServerRoom-text" class="color7-text">Zone ServerRoom</span></label>
+                                        </div>
+                                    </div>
+                                    <div id="parallel-coordinates-floor-3">
+                                        <h3>Number of detections per person</h3>
+                                        <div id="wrapper-floor-3" class="wrapper">
+                                            <div id="first-floor-3" class="first">
+                                                <svg id = "parallel_3"></svg>
+                                            </div>
+                                            <div id="second-floor-3" class="second">
+                                                <div id="table-floor-3" class="table">
+                                                    <div id="box-floor-3" class="box">
+                                                        <p>Floor: <span id="floortext-floor-3" class="info"></span></p>
+                                                        <p>Proxid: <span id="proxidtext-floor-3" class="info"></span></p>
+                                                        <p>Mean detections per day: <span id="detectionstext-floor-3" class="info"></span></p>
+                                                    </div>
+                                                </div>
+                                                <div id="heatie-floor-3" class="heatie"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+                    </section>
+            </div>
+
+        <!-- Footer -->
+            <div id="footer">
+
+                <!-- Copyright -->
+                    <ul class="copyright">
+                        <li>&copy; Bas Châtel, Leslie dao, Wessel de Jong</li><li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+                    </ul>
+
+            </div>
+
+        <!-- Scripts -->        
+            <script src="js/dimensions.js" defer></script>
+            <script src="js/general.js" defer></script>
+            <script src="js/floor1.js" defer></script>
+            <script src="js/floor2.js" defer></script>
+            <script src="js/floor3.js" defer></script>
+            <script src="js/overview-proxExtended2.js" defer></script>
+            <script src="js/overview-dataMaker.js" defer></script>
+            <script src="js/parallel-parallellCoordinates.js" defer></script>
+            <script src="js/parallel-parallelData.js" defer></script>
+            <script src="js/parallel-parallelButtons.js" defer></script>
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/jquery.scrollzer.min.js"></script>
+            <script src="assets/js/skel.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+            <script src="assets/js/main.js"></script>
+
+    </body>
+</html>

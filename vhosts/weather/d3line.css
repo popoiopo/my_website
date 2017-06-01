@@ -1,0 +1,71 @@
+html { 		background: url(images/snow.png) no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			font: Verdana}
+
+img[alt] {  border-radius: 10px;}
+
+#option {   background-color: #4CAF50; /* Green */
+		    border: none;
+		    color: white;
+		    padding: 15px 32px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 16px;
+		    border-radius: 6px;}
+
+body {
+			font: 10px sans-serif;
+			text-align: center;
+			margin-left: 5%;
+			margin-right: 5%;
+}
+
+.h1 {		padding: 25px 0 0 0;}
+
+.axis path,
+.axis line {
+			fill: none;
+			stroke: #000;
+			shape-rendering: crispEdges;
+}
+
+.x.axis path {
+			display: none;
+}
+
+.x.axis {
+			font-size: 12px;
+}
+
+.y.axis {
+			font-size: 12px;
+}
+
+.line {
+			fill: none;
+			stroke: steelblue;
+			stroke-width: 1.5px;
+}
+
+.y1, .y2 {
+			font-size: 10px;
+}
+
+.x.label {
+			font-size: 16px;
+}
+
+/* Dropdown Button */
+.dropdown {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}

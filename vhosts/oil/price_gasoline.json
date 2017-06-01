@@ -1,0 +1,1097 @@
+[
+    {
+        "Country_Name": "Afghanistan",
+        "Price": "1.07",
+        "Country_Code": "AFG"
+    },
+    {
+        "Country_Name": "Albania",
+        "Price": "1.76",
+        "Country_Code": "ALB"
+    },
+    {
+        "Country_Name": "Algeria",
+        "Price": "0.27",
+        "Country_Code": "DZA"
+    },
+    {
+        "Country_Name": "American Samoa",
+        "Price": "..",
+        "Country_Code": "ASM"
+    },
+    {
+        "Country_Name": "Andorra",
+        "Price": "1.51",
+        "Country_Code": "ADO"
+    },
+    {
+        "Country_Name": "Angola",
+        "Price": "0.76",
+        "Country_Code": "AGO"
+    },
+    {
+        "Country_Name": "Antigua and Barbuda",
+        "Price": "..",
+        "Country_Code": "ATG"
+    },
+    {
+        "Country_Name": "Argentina",
+        "Price": "1.52",
+        "Country_Code": "ARG"
+    },
+    {
+        "Country_Name": "Armenia",
+        "Price": "1.3",
+        "Country_Code": "ARM"
+    },
+    {
+        "Country_Name": "Aruba",
+        "Price": "..",
+        "Country_Code": "ABW"
+    },
+    {
+        "Country_Name": "Australia",
+        "Price": "1.23",
+        "Country_Code": "AUS"
+    },
+    {
+        "Country_Name": "Austria",
+        "Price": "1.6",
+        "Country_Code": "AUT"
+    },
+    {
+        "Country_Name": "Azerbaijan",
+        "Price": "1.21",
+        "Country_Code": "AZE"
+    },
+    {
+        "Country_Name": "\"Bahamas, The\",BHS,1.05",
+        "Price": null,
+        "Country_Code": null
+    },
+    {
+        "Country_Name": "Bahrain",
+        "Price": "..",
+        "Country_Code": "BHR"
+    },
+    {
+        "Country_Name": "Bangladesh",
+        "Price": "1.3",
+        "Country_Code": "BGD"
+    },
+    {
+        "Country_Name": "Barbados",
+        "Price": "1.81",
+        "Country_Code": "BRB"
+    },
+    {
+        "Country_Name": "Belarus",
+        "Price": "1.06",
+        "Country_Code": "BLR"
+    },
+    {
+        "Country_Name": "Belgium",
+        "Price": "1.9",
+        "Country_Code": "BEL"
+    },
+    {
+        "Country_Name": "Belize",
+        "Price": "1.37",
+        "Country_Code": "BLZ"
+    },
+    {
+        "Country_Name": "Benin",
+        "Price": "1.03",
+        "Country_Code": "BEN"
+    },
+    {
+        "Country_Name": "Bermuda",
+        "Price": "..",
+        "Country_Code": "BMU"
+    },
+    {
+        "Country_Name": "Bhutan",
+        "Price": "1.04",
+        "Country_Code": "BTN"
+    },
+    {
+        "Country_Name": "Bolivia",
+        "Price": "0.7",
+        "Country_Code": "BOL"
+    },
+    {
+        "Country_Name": "Bosnia and Herzegovina",
+        "Price": "1.51",
+        "Country_Code": "BIH"
+    },
+    {
+        "Country_Name": "Botswana",
+        "Price": "1.06",
+        "Country_Code": "BWA"
+    },
+    {
+        "Country_Name": "Brazil",
+        "Price": "1.27",
+        "Country_Code": "BRA"
+    },
+    {
+        "Country_Name": "Brunei Darussalam",
+        "Price": "0.41",
+        "Country_Code": "BRN"
+    },
+    {
+        "Country_Name": "Bulgaria",
+        "Price": "1.49",
+        "Country_Code": "BGR"
+    },
+    {
+        "Country_Name": "Burkina Faso",
+        "Price": "1.4",
+        "Country_Code": "BFA"
+    },
+    {
+        "Country_Name": "Burundi",
+        "Price": "1.53",
+        "Country_Code": "BDI"
+    },
+    {
+        "Country_Name": "Cabo Verde",
+        "Price": "1.56",
+        "Country_Code": "CPV"
+    },
+    {
+        "Country_Name": "Cambodia",
+        "Price": "1.34",
+        "Country_Code": "KHM"
+    },
+    {
+        "Country_Name": "Cameroon",
+        "Price": "1.24",
+        "Country_Code": "CMR"
+    },
+    {
+        "Country_Name": "Canada",
+        "Price": "1.17",
+        "Country_Code": "CAN"
+    },
+    {
+        "Country_Name": "Cayman Islands",
+        "Price": "..",
+        "Country_Code": "CYM"
+    },
+    {
+        "Country_Name": "Central African Republic",
+        "Price": "1.69",
+        "Country_Code": "CAF"
+    },
+    {
+        "Country_Name": "Chad",
+        "Price": "0.9",
+        "Country_Code": "TCD"
+    },
+    {
+        "Country_Name": "Channel Islands",
+        "Price": "..",
+        "Country_Code": "CHI"
+    },
+    {
+        "Country_Name": "Chile",
+        "Price": "1.52",
+        "Country_Code": "CHL"
+    },
+    {
+        "Country_Name": "China",
+        "Price": "1.17",
+        "Country_Code": "CHN"
+    },
+    {
+        "Country_Name": "Colombia",
+        "Price": "1.08",
+        "Country_Code": "COL"
+    },
+    {
+        "Country_Name": "Comoros",
+        "Price": "..",
+        "Country_Code": "COM"
+    },
+    {
+        "Country_Name": "\"Congo, Dem. Rep.\",ZAR,1.68",
+        "Price": null,
+        "Country_Code": null
+    },
+    {
+        "Country_Name": "\"Congo, Rep.\",COG,1.13",
+        "Price": null,
+        "Country_Code": null
+    },
+    {
+        "Country_Name": "Costa Rica",
+        "Price": "1.44",
+        "Country_Code": "CRI"
+    },
+    {
+        "Country_Name": "Cote d'Ivoire",
+        "Price": "1.42",
+        "Country_Code": "CIV"
+    },
+    {
+        "Country_Name": "Croatia",
+        "Price": "1.66",
+        "Country_Code": "HRV"
+    },
+    {
+        "Country_Name": "Cuba",
+        "Price": "1.4",
+        "Country_Code": "CUB"
+    },
+    {
+        "Country_Name": "Curacao",
+        "Price": "..",
+        "Country_Code": "CUW"
+    },
+    {
+        "Country_Name": "Cyprus",
+        "Price": "1.61",
+        "Country_Code": "CYP"
+    },
+    {
+        "Country_Name": "Czech Republic",
+        "Price": "1.67",
+        "Country_Code": "CZE"
+    },
+    {
+        "Country_Name": "Denmark",
+        "Price": "2.01",
+        "Country_Code": "DNK"
+    },
+    {
+        "Country_Name": "Djibouti",
+        "Price": "1.41",
+        "Country_Code": "DJI"
+    },
+    {
+        "Country_Name": "Dominica",
+        "Price": "..",
+        "Country_Code": "DMA"
+    },
+    {
+        "Country_Name": "Dominican Republic",
+        "Price": "1.41",
+        "Country_Code": "DOM"
+    },
+    {
+        "Country_Name": "Ecuador",
+        "Price": "0.6",
+        "Country_Code": "ECU"
+    },
+    {
+        "Country_Name": "\"Egypt, Arab Rep.\",EGY,0.88",
+        "Price": null,
+        "Country_Code": null
+    },
+    {
+        "Country_Name": "El Salvador",
+        "Price": "1.12",
+        "Country_Code": "SLV"
+    },
+    {
+        "Country_Name": "Equatorial Guinea",
+        "Price": "..",
+        "Country_Code": "GNQ"
+    },
+    {
+        "Country_Name": "Eritrea",
+        "Price": "3.33",
+        "Country_Code": "ERI"
+    },
+    {
+        "Country_Name": "Estonia",
+        "Price": "1.46",
+        "Country_Code": "EST"
+    },
+    {
+        "Country_Name": "Ethiopia",
+        "Price": "0.99",
+        "Country_Code": "ETH"
+    },
+    {
+        "Country_Name": "Faeroe Islands",
+        "Price": "..",
+        "Country_Code": "FRO"
+    },
+    {
+        "Country_Name": "Fiji",
+        "Price": "1.34",
+        "Country_Code": "FJI"
+    },
+    {
+        "Country_Name": "Finland",
+        "Price": "1.89",
+        "Country_Code": "FIN"
+    },
+    {
+        "Country_Name": "France",
+        "Price": "1.79",
+        "Country_Code": "FRA"
+    },
+    {
+        "Country_Name": "French Polynesia",
+        "Price": "..",
+        "Country_Code": "PYF"
+    },
+    {
+        "Country_Name": "Gabon",
+        "Price": "1.02",
+        "Country_Code": "GAB"
+    },
+    {
+        "Country_Name": "\"Gambia, The\",GMB,1.37",
+        "Price": null,
+        "Country_Code": null
+    },
+    {
+        "Country_Name": "Georgia",
+        "Price": "1.24",
+        "Country_Code": "GEO"
+    },
+    {
+        "Country_Name": "Germany",
+        "Price": "1.8",
+        "Country_Code": "DEU"
+    },
+    {
+        "Country_Name": "Ghana",
+        "Price": "1.06",
+        "Country_Code": "GHA"
+    },
+    {
+        "Country_Name": "Greece",
+        "Price": "1.98",
+        "Country_Code": "GRC"
+    },
+    {
+        "Country_Name": "Greenland",
+        "Price": "..",
+        "Country_Code": "GRL"
+    },
+    {
+        "Country_Name": "Grenada",
+        "Price": "..",
+        "Country_Code": "GRD"
+    },
+    {
+        "Country_Name": "Guam",
+        "Price": "..",
+        "Country_Code": "GUM"
+    },
+    {
+        "Country_Name": "Guatemala",
+        "Price": "1.01",
+        "Country_Code": "GTM"
+    },
+    {
+        "Country_Name": "Guinea",
+        "Price": "1.45",
+        "Country_Code": "GIN"
+    },
+    {
+        "Country_Name": "Guinea-Bissau",
+        "Price": "..",
+        "Country_Code": "GNB"
+    },
+    {
+        "Country_Name": "Guyana",
+        "Price": "1.15",
+        "Country_Code": "GUY"
+    },
+    {
+        "Country_Name": "Haiti",
+        "Price": "1.16",
+        "Country_Code": "HTI"
+    },
+    {
+        "Country_Name": "Honduras",
+        "Price": "1.2",
+        "Country_Code": "HND"
+    },
+    {
+        "Country_Name": "\"Hong Kong SAR, China\",HKG,2.06",
+        "Price": null,
+        "Country_Code": null
+    },
+    {
+        "Country_Name": "Hungary",
+        "Price": "1.58",
+        "Country_Code": "HUN"
+    },
+    {
+        "Country_Name": "Iceland",
+        "Price": "1.85",
+        "Country_Code": "ISL"
+    },
+    {
+        "Country_Name": "India",
+        "Price": "1.1",
+        "Country_Code": "IND"
+    },
+    {
+        "Country_Name": "Indonesia",
+        "Price": "0.93",
+        "Country_Code": "IDN"
+    },
+    {
+        "Country_Name": "\"Iran, Islamic Rep.\",IRN,0.374",
+        "Price": null,
+        "Country_Code": null
+    },
+    {
+        "Country_Name": "Iraq",
+        "Price": "0.43",
+        "Country_Code": "IRQ"
+    },
+    {
+        "Country_Name": "Ireland",
+        "Price": "1.92",
+        "Country_Code": "IRL"
+    },
+    {
+        "Country_Name": "Isle of Man",
+        "Price": "..",
+        "Country_Code": "IMY"
+    },
+    {
+        "Country_Name": "Israel",
+        "Price": "1.88",
+        "Country_Code": "ISR"
+    },
+    {
+        "Country_Name": "Italy",
+        "Price": "2.14",
+        "Country_Code": "ITA"
+    },
+    {
+        "Country_Name": "Jamaica",
+        "Price": "1.14",
+        "Country_Code": "JAM"
+    },
+    {
+        "Country_Name": "Japan",
+        "Price": "1.38",
+        "Country_Code": "JPN"
+    },
+    {
+        "Country_Name": "Jordan",
+        "Price": "1.27",
+        "Country_Code": "JOR"
+    },
+    {
+        "Country_Name": "Kazakhstan",
+        "Price": "0.81",
+        "Country_Code": "KAZ"
+    },
+    {
+        "Country_Name": "Kenya",
+        "Price": "1.21",
+        "Country_Code": "KEN"
+    },
+    {
+        "Country_Name": "Kiribati",
+        "Price": "..",
+        "Country_Code": "KIR"
+    },
+    {
+        "Country_Name": "\"Korea, Dem. Rep.\",PRK,0.94",
+        "Price": null,
+        "Country_Code": null
+    },
+    {
+        "Country_Name": "\"Korea, Rep.\",KOR,1.55",
+        "Price": null,
+        "Country_Code": null
+    },
+    {
+        "Country_Name": "Kosovo",
+        "Price": "1.54",
+        "Country_Code": "KSV"
+    },
+    {
+        "Country_Name": "Kuwait",
+        "Price": "0.22",
+        "Country_Code": "KWT"
+    },
+    {
+        "Country_Name": "Kyrgyz Republic",
+        "Price": "0.94",
+        "Country_Code": "KGZ"
+    },
+    {
+        "Country_Name": "Lao PDR",
+        "Price": "1.4",
+        "Country_Code": "LAO"
+    },
+    {
+        "Country_Name": "Latvia",
+        "Price": "1.48",
+        "Country_Code": "LVA"
+    },
+    {
+        "Country_Name": "Lebanon",
+        "Price": "0.96",
+        "Country_Code": "LBN"
+    },
+    {
+        "Country_Name": "Lesotho",
+        "Price": "1.03",
+        "Country_Code": "LSO"
+    },
+    {
+        "Country_Name": "Liberia",
+        "Price": "0.91",
+        "Country_Code": "LBR"
+    },
+    {
+        "Country_Name": "Libya",
+        "Price": "..",
+        "Country_Code": "LBY"
+    },
+    {
+        "Country_Name": "Liechtenstein",
+        "Price": "1.74",
+        "Country_Code": "LIE"
+    },
+    {
+        "Country_Name": "Lithuania",
+        "Price": "1.57",
+        "Country_Code": "LTU"
+    },
+    {
+        "Country_Name": "Luxembourg",
+        "Price": "1.52",
+        "Country_Code": "LUX"
+    },
+    {
+        "Country_Name": "\"Macao SAR, China\",MAC,..",
+        "Price": null,
+        "Country_Code": null
+    },
+    {
+        "Country_Name": "\"Macedonia, FYR\",MKD,1.49",
+        "Price": null,
+        "Country_Code": null
+    },
+    {
+        "Country_Name": "Madagascar",
+        "Price": "1.35",
+        "Country_Code": "MDG"
+    },
+    {
+        "Country_Name": "Malawi",
+        "Price": "1.78",
+        "Country_Code": "MWI"
+    },
+    {
+        "Country_Name": "Malaysia",
+        "Price": "0.68",
+        "Country_Code": "MYS"
+    },
+    {
+        "Country_Name": "Maldives",
+        "Price": "1.63",
+        "Country_Code": "MDV"
+    },
+    {
+        "Country_Name": "Mali",
+        "Price": "1.47",
+        "Country_Code": "MLI"
+    },
+    {
+        "Country_Name": "Malta",
+        "Price": "1.8",
+        "Country_Code": "MLT"
+    },
+    {
+        "Country_Name": "Marshall Islands",
+        "Price": "1.44",
+        "Country_Code": "MHL"
+    },
+    {
+        "Country_Name": "Mauritania",
+        "Price": "1.53",
+        "Country_Code": "MRT"
+    },
+    {
+        "Country_Name": "Mauritius",
+        "Price": "1.65",
+        "Country_Code": "MUS"
+    },
+    {
+        "Country_Name": "Mexico",
+        "Price": "1.03",
+        "Country_Code": "MEX"
+    },
+    {
+        "Country_Name": "\"Micronesia, Fed. Sts.\",FSM,..",
+        "Price": null,
+        "Country_Code": null
+    },
+    {
+        "Country_Name": "Moldova",
+        "Price": "1.21",
+        "Country_Code": "MDA"
+    },
+    {
+        "Country_Name": "Monaco",
+        "Price": "2",
+        "Country_Code": "MCO"
+    },
+    {
+        "Country_Name": "Mongolia",
+        "Price": "1.01",
+        "Country_Code": "MNG"
+    },
+    {
+        "Country_Name": "Montenegro",
+        "Price": "1.6",
+        "Country_Code": "MNE"
+    },
+    {
+        "Country_Name": "Morocco",
+        "Price": "1.38",
+        "Country_Code": "MAR"
+    },
+    {
+        "Country_Name": "Mozambique",
+        "Price": "1.55",
+        "Country_Code": "MOZ"
+    },
+    {
+        "Country_Name": "Myanmar",
+        "Price": "1.14",
+        "Country_Code": "MMR"
+    },
+    {
+        "Country_Name": "Namibia",
+        "Price": "1.08",
+        "Country_Code": "NAM"
+    },
+    {
+        "Country_Name": "Nepal",
+        "Price": "1.31",
+        "Country_Code": "NPL"
+    },
+    {
+        "Country_Name": "Netherlands",
+        "Price": "2.15",
+        "Country_Code": "NLD"
+    },
+    {
+        "Country_Name": "New Caledonia",
+        "Price": "..",
+        "Country_Code": "NCL"
+    },
+    {
+        "Country_Name": "New Zealand",
+        "Price": "1.71",
+        "Country_Code": "NZL"
+    },
+    {
+        "Country_Name": "Nicaragua",
+        "Price": "1.18",
+        "Country_Code": "NIC"
+    },
+    {
+        "Country_Name": "Niger",
+        "Price": "1.09",
+        "Country_Code": "NER"
+    },
+    {
+        "Country_Name": "Nigeria",
+        "Price": "0.56",
+        "Country_Code": "NGA"
+    },
+    {
+        "Country_Name": "Northern Mariana Islands",
+        "Price": "..",
+        "Country_Code": "MNP"
+    },
+    {
+        "Country_Name": "Norway",
+        "Price": "2.27",
+        "Country_Code": "NOR"
+    },
+    {
+        "Country_Name": "Oman",
+        "Price": "0.31",
+        "Country_Code": "OMN"
+    },
+    {
+        "Country_Name": "Pakistan",
+        "Price": "0.94",
+        "Country_Code": "PAK"
+    },
+    {
+        "Country_Name": "Palau",
+        "Price": "..",
+        "Country_Code": "PLW"
+    },
+    {
+        "Country_Name": "Panama",
+        "Price": "0.96",
+        "Country_Code": "PAN"
+    },
+    {
+        "Country_Name": "Papua New Guinea",
+        "Price": "1.36",
+        "Country_Code": "PNG"
+    },
+    {
+        "Country_Name": "Paraguay",
+        "Price": "1.59",
+        "Country_Code": "PRY"
+    },
+    {
+        "Country_Name": "Peru",
+        "Price": "1.46",
+        "Country_Code": "PER"
+    },
+    {
+        "Country_Name": "Philippines",
+        "Price": "1.05",
+        "Country_Code": "PHL"
+    },
+    {
+        "Country_Name": "Poland",
+        "Price": "1.42",
+        "Country_Code": "POL"
+    },
+    {
+        "Country_Name": "Portugal",
+        "Price": "1.89",
+        "Country_Code": "PRT"
+    },
+    {
+        "Country_Name": "Puerto Rico",
+        "Price": "..",
+        "Country_Code": "PRI"
+    },
+    {
+        "Country_Name": "Qatar",
+        "Price": "0.23",
+        "Country_Code": "QAT"
+    },
+    {
+        "Country_Name": "Romania",
+        "Price": "1.59",
+        "Country_Code": "ROM"
+    },
+    {
+        "Country_Name": "Russian Federation",
+        "Price": "0.81",
+        "Country_Code": "RUS"
+    },
+    {
+        "Country_Name": "Rwanda",
+        "Price": "1.41",
+        "Country_Code": "RWA"
+    },
+    {
+        "Country_Name": "Samoa",
+        "Price": "..",
+        "Country_Code": "WSM"
+    },
+    {
+        "Country_Name": "San Marino",
+        "Price": "..",
+        "Country_Code": "SMR"
+    },
+    {
+        "Country_Name": "Sao Tome and Principe",
+        "Price": "..",
+        "Country_Code": "STP"
+    },
+    {
+        "Country_Name": "Saudi Arabia",
+        "Price": "0.16",
+        "Country_Code": "SAU"
+    },
+    {
+        "Country_Name": "Senegal",
+        "Price": "1.7",
+        "Country_Code": "SEN"
+    },
+    {
+        "Country_Name": "Serbia",
+        "Price": "1.55",
+        "Country_Code": "SRB"
+    },
+    {
+        "Country_Name": "Seychelles",
+        "Price": "..",
+        "Country_Code": "SYC"
+    },
+    {
+        "Country_Name": "Sierra Leone",
+        "Price": "1.04",
+        "Country_Code": "SLE"
+    },
+    {
+        "Country_Name": "Singapore",
+        "Price": "1.58",
+        "Country_Code": "SGP"
+    },
+    {
+        "Country_Name": "Sint Maarten (Dutch part)",
+        "Price": "..",
+        "Country_Code": "SXM"
+    },
+    {
+        "Country_Name": "Slovak Republic",
+        "Price": "1.77",
+        "Country_Code": "SVK"
+    },
+    {
+        "Country_Name": "Slovenia",
+        "Price": "1.78",
+        "Country_Code": "SVN"
+    },
+    {
+        "Country_Name": "Solomon Islands",
+        "Price": "..",
+        "Country_Code": "SLB"
+    },
+    {
+        "Country_Name": "Somalia",
+        "Price": "..",
+        "Country_Code": "SOM"
+    },
+    {
+        "Country_Name": "South Africa",
+        "Price": "1.19",
+        "Country_Code": "ZAF"
+    },
+    {
+        "Country_Name": "South Sudan",
+        "Price": "1.98",
+        "Country_Code": "SSD"
+    },
+    {
+        "Country_Name": "Spain",
+        "Price": "1.63",
+        "Country_Code": "ESP"
+    },
+    {
+        "Country_Name": "Sri Lanka",
+        "Price": "1.27",
+        "Country_Code": "LKA"
+    },
+    {
+        "Country_Name": "St. Kitts and Nevis",
+        "Price": "..",
+        "Country_Code": "KNA"
+    },
+    {
+        "Country_Name": "St. Lucia",
+        "Price": "1.3",
+        "Country_Code": "LCA"
+    },
+    {
+        "Country_Name": "St. Martin (French part)",
+        "Price": "..",
+        "Country_Code": "MAF"
+    },
+    {
+        "Country_Name": "St. Vincent and the Grenadines",
+        "Price": "..",
+        "Country_Code": "VCT"
+    },
+    {
+        "Country_Name": "Sudan",
+        "Price": "0.82",
+        "Country_Code": "SDN"
+    },
+    {
+        "Country_Name": "Suriname",
+        "Price": "1.29",
+        "Country_Code": "SUR"
+    },
+    {
+        "Country_Name": "Swaziland",
+        "Price": "1.14",
+        "Country_Code": "SWZ"
+    },
+    {
+        "Country_Name": "Sweden",
+        "Price": "1.82",
+        "Country_Code": "SWE"
+    },
+    {
+        "Country_Name": "Switzerland",
+        "Price": "1.74",
+        "Country_Code": "CHE"
+    },
+    {
+        "Country_Name": "Syrian Arab Republic",
+        "Price": "0.83",
+        "Country_Code": "SYR"
+    },
+    {
+        "Country_Name": "Tajikistan",
+        "Price": "1.32",
+        "Country_Code": "TJK"
+    },
+    {
+        "Country_Name": "Tanzania",
+        "Price": "1.29",
+        "Country_Code": "TZA"
+    },
+    {
+        "Country_Name": "Thailand",
+        "Price": "1.29",
+        "Country_Code": "THA"
+    },
+    {
+        "Country_Name": "Timor-Leste",
+        "Price": "1.17",
+        "Country_Code": "TMP"
+    },
+    {
+        "Country_Name": "Togo",
+        "Price": "1.25",
+        "Country_Code": "TGO"
+    },
+    {
+        "Country_Name": "Tonga",
+        "Price": "..",
+        "Country_Code": "TON"
+    },
+    {
+        "Country_Name": "Trinidad and Tobago",
+        "Price": "..",
+        "Country_Code": "TTO"
+    },
+    {
+        "Country_Name": "Tunisia",
+        "Price": "0.91",
+        "Country_Code": "TUN"
+    },
+    {
+        "Country_Name": "Turkey",
+        "Price": "2.06",
+        "Country_Code": "TUR"
+    },
+    {
+        "Country_Name": "Turkmenistan",
+        "Price": "0.22",
+        "Country_Code": "TKM"
+    },
+    {
+        "Country_Name": "Turks and Caicos Islands",
+        "Price": "..",
+        "Country_Code": "TCA"
+    },
+    {
+        "Country_Name": "Tuvalu",
+        "Price": "..",
+        "Country_Code": "TUV"
+    },
+    {
+        "Country_Name": "Uganda",
+        "Price": "1.4",
+        "Country_Code": "UGA"
+    },
+    {
+        "Country_Name": "Ukraine",
+        "Price": "1.17",
+        "Country_Code": "UKR"
+    },
+    {
+        "Country_Name": "United Arab Emirates",
+        "Price": "0.47",
+        "Country_Code": "ARE"
+    },
+    {
+        "Country_Name": "United Kingdom",
+        "Price": "1.92",
+        "Country_Code": "GBR"
+    },
+    {
+        "Country_Name": "United States",
+        "Price": "0.76",
+        "Country_Code": "USA"
+    },
+    {
+        "Country_Name": "Uruguay",
+        "Price": "1.8",
+        "Country_Code": "URY"
+    },
+    {
+        "Country_Name": "Uzbekistan",
+        "Price": "1.02",
+        "Country_Code": "UZB"
+    },
+    {
+        "Country_Name": "Vanuatu",
+        "Price": "..",
+        "Country_Code": "VUT"
+    },
+    {
+        "Country_Name": "\"Venezuela, RB\",VEN,0.015",
+        "Price": null,
+        "Country_Code": null
+    },
+    {
+        "Country_Name": "Vietnam",
+        "Price": "1.04",
+        "Country_Code": "VNM"
+    },
+    {
+        "Country_Name": "Virgin Islands (U.S.)",
+        "Price": "..",
+        "Country_Code": "VIR"
+    },
+    {
+        "Country_Name": "West Bank and Gaza",
+        "Price": "1.77",
+        "Country_Code": "WBG"
+    },
+    {
+        "Country_Name": "\"Yemen, Rep.\",YEM,0.7",
+        "Price": null,
+        "Country_Code": null
+    },
+    {
+        "Country_Name": "Zambia",
+        "Price": "1.68",
+        "Country_Code": "ZMB"
+    },
+    {
+        "Country_Name": "Zimbabwe",
+        "Price": "1.56",
+        "Country_Code": "ZWE"
+    },
+    {
+        "Country_Name": "",
+        "Price": "",
+        "Country_Code": ""
+    },
+    {
+        "Country_Name": "",
+        "Price": "",
+        "Country_Code": ""
+    },
+    {
+        "Country_Name": "",
+        "Price": "",
+        "Country_Code": ""
+    },
+    {
+        "Country_Name": "Data from database: World Development Indicators",
+        "Price": "",
+        "Country_Code": ""
+    },
+    {
+        "Country_Name": "Last Updated: 02/17/2016",
+        "Price": "",
+        "Country_Code": ""
+    }
+]

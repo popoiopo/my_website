@@ -1,0 +1,220 @@
+Country_Name,Country_Code,Price
+Afghanistan,AFG,1.07
+Albania,ALB,1.76
+Algeria,DZA,0.27
+American Samoa,ASM,..
+Andorra,ADO,1.51
+Angola,AGO,0.76
+Antigua and Barbuda,ATG,..
+Argentina,ARG,1.52
+Armenia,ARM,1.3
+Aruba,ABW,..
+Australia,AUS,1.23
+Austria,AUT,1.6
+Azerbaijan,AZE,1.21
+"""Bahamas, The"",BHS,1.05"
+Bahrain,BHR,..
+Bangladesh,BGD,1.3
+Barbados,BRB,1.81
+Belarus,BLR,1.06
+Belgium,BEL,1.9
+Belize,BLZ,1.37
+Benin,BEN,1.03
+Bermuda,BMU,..
+Bhutan,BTN,1.04
+Bolivia,BOL,0.7
+Bosnia and Herzegovina,BIH,1.51
+Botswana,BWA,1.06
+Brazil,BRA,1.27
+Brunei Darussalam,BRN,0.41
+Bulgaria,BGR,1.49
+Burkina Faso,BFA,1.4
+Burundi,BDI,1.53
+Cabo Verde,CPV,1.56
+Cambodia,KHM,1.34
+Cameroon,CMR,1.24
+Canada,CAN,1.17
+Cayman Islands,CYM,..
+Central African Republic,CAF,1.69
+Chad,TCD,0.9
+Channel Islands,CHI,..
+Chile,CHL,1.52
+China,CHN,1.17
+Colombia,COL,1.08
+Comoros,COM,..
+"""Congo, Dem. Rep."",ZAR,1.68"
+"""Congo, Rep."",COG,1.13"
+Costa Rica,CRI,1.44
+Cote d'Ivoire,CIV,1.42
+Croatia,HRV,1.66
+Cuba,CUB,1.4
+Curacao,CUW,..
+Cyprus,CYP,1.61
+Czech Republic,CZE,1.67
+Denmark,DNK,2.01
+Djibouti,DJI,1.41
+Dominica,DMA,..
+Dominican Republic,DOM,1.41
+Ecuador,ECU,0.6
+"""Egypt, Arab Rep."",EGY,0.88"
+El Salvador,SLV,1.12
+Equatorial Guinea,GNQ,..
+Eritrea,ERI,3.33
+Estonia,EST,1.46
+Ethiopia,ETH,0.99
+Faeroe Islands,FRO,..
+Fiji,FJI,1.34
+Finland,FIN,1.89
+France,FRA,1.79
+French Polynesia,PYF,..
+Gabon,GAB,1.02
+"""Gambia, The"",GMB,1.37"
+Georgia,GEO,1.24
+Germany,DEU,1.8
+Ghana,GHA,1.06
+Greece,GRC,1.98
+Greenland,GRL,..
+Grenada,GRD,..
+Guam,GUM,..
+Guatemala,GTM,1.01
+Guinea,GIN,1.45
+Guinea-Bissau,GNB,..
+Guyana,GUY,1.15
+Haiti,HTI,1.16
+Honduras,HND,1.2
+"""Hong Kong SAR, China"",HKG,2.06"
+Hungary,HUN,1.58
+Iceland,ISL,1.85
+India,IND,1.1
+Indonesia,IDN,0.93
+"""Iran, Islamic Rep."",IRN,0.374"
+Iraq,IRQ,0.43
+Ireland,IRL,1.92
+Isle of Man,IMY,..
+Israel,ISR,1.88
+Italy,ITA,2.14
+Jamaica,JAM,1.14
+Japan,JPN,1.38
+Jordan,JOR,1.27
+Kazakhstan,KAZ,0.81
+Kenya,KEN,1.21
+Kiribati,KIR,..
+"""Korea, Dem. Rep."",PRK,0.94"
+"""Korea, Rep."",KOR,1.55"
+Kosovo,KSV,1.54
+Kuwait,KWT,0.22
+Kyrgyz Republic,KGZ,0.94
+Lao PDR,LAO,1.4
+Latvia,LVA,1.48
+Lebanon,LBN,0.96
+Lesotho,LSO,1.03
+Liberia,LBR,0.91
+Libya,LBY,..
+Liechtenstein,LIE,1.74
+Lithuania,LTU,1.57
+Luxembourg,LUX,1.52
+"""Macao SAR, China"",MAC,.."
+"""Macedonia, FYR"",MKD,1.49"
+Madagascar,MDG,1.35
+Malawi,MWI,1.78
+Malaysia,MYS,0.68
+Maldives,MDV,1.63
+Mali,MLI,1.47
+Malta,MLT,1.8
+Marshall Islands,MHL,1.44
+Mauritania,MRT,1.53
+Mauritius,MUS,1.65
+Mexico,MEX,1.03
+"""Micronesia, Fed. Sts."",FSM,.."
+Moldova,MDA,1.21
+Monaco,MCO,2
+Mongolia,MNG,1.01
+Montenegro,MNE,1.6
+Morocco,MAR,1.38
+Mozambique,MOZ,1.55
+Myanmar,MMR,1.14
+Namibia,NAM,1.08
+Nepal,NPL,1.31
+Netherlands,NLD,2.15
+New Caledonia,NCL,..
+New Zealand,NZL,1.71
+Nicaragua,NIC,1.18
+Niger,NER,1.09
+Nigeria,NGA,0.56
+Northern Mariana Islands,MNP,..
+Norway,NOR,2.27
+Oman,OMN,0.31
+Pakistan,PAK,0.94
+Palau,PLW,..
+Panama,PAN,0.96
+Papua New Guinea,PNG,1.36
+Paraguay,PRY,1.59
+Peru,PER,1.46
+Philippines,PHL,1.05
+Poland,POL,1.42
+Portugal,PRT,1.89
+Puerto Rico,PRI,..
+Qatar,QAT,0.23
+Romania,ROM,1.59
+Russian Federation,RUS,0.81
+Rwanda,RWA,1.41
+Samoa,WSM,..
+San Marino,SMR,..
+Sao Tome and Principe,STP,..
+Saudi Arabia,SAU,0.16
+Senegal,SEN,1.7
+Serbia,SRB,1.55
+Seychelles,SYC,..
+Sierra Leone,SLE,1.04
+Singapore,SGP,1.58
+Sint Maarten (Dutch part),SXM,..
+Slovak Republic,SVK,1.77
+Slovenia,SVN,1.78
+Solomon Islands,SLB,..
+Somalia,SOM,..
+South Africa,ZAF,1.19
+South Sudan,SSD,1.98
+Spain,ESP,1.63
+Sri Lanka,LKA,1.27
+St. Kitts and Nevis,KNA,..
+St. Lucia,LCA,1.3
+St. Martin (French part),MAF,..
+St. Vincent and the Grenadines,VCT,..
+Sudan,SDN,0.82
+Suriname,SUR,1.29
+Swaziland,SWZ,1.14
+Sweden,SWE,1.82
+Switzerland,CHE,1.74
+Syrian Arab Republic,SYR,0.83
+Tajikistan,TJK,1.32
+Tanzania,TZA,1.29
+Thailand,THA,1.29
+Timor-Leste,TMP,1.17
+Togo,TGO,1.25
+Tonga,TON,..
+Trinidad and Tobago,TTO,..
+Tunisia,TUN,0.91
+Turkey,TUR,2.06
+Turkmenistan,TKM,0.22
+Turks and Caicos Islands,TCA,..
+Tuvalu,TUV,..
+Uganda,UGA,1.4
+Ukraine,UKR,1.17
+United Arab Emirates,ARE,0.47
+United Kingdom,GBR,1.92
+United States,USA,0.76
+Uruguay,URY,1.8
+Uzbekistan,UZB,1.02
+Vanuatu,VUT,..
+"""Venezuela, RB"",VEN,0.015"
+Vietnam,VNM,1.04
+Virgin Islands (U.S.),VIR,..
+West Bank and Gaza,WBG,1.77
+"""Yemen, Rep."",YEM,0.7"
+Zambia,ZMB,1.68
+Zimbabwe,ZWE,1.56
+,,,,
+,,,,
+,,,,
+Data from database: World Development Indicators,,,,
+Last Updated: 02/17/2016,,,,

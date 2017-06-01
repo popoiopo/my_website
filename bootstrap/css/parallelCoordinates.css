@@ -1,0 +1,146 @@
+.button {
+    background-color: green;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+}
+
+.floor-button {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    font-size: 12px;
+}
+
+.button:hover {
+    background-color: orange;
+}
+
+.wrapper {
+    width: 100%;
+    display:flex;
+    overflow:scroll;
+    min-width: 1250px;
+    max-width: 1250px;
+}
+
+.first {
+    width: 300px;
+    float:left; /* add this */
+    flex: 3;
+    margin-right: 10px;
+}
+
+.second {
+    flex:2;
+    margin-right: auto;
+    position:relative;
+    overflow:hidden;
+    clear:both;
+}
+
+.heatie {
+  position:absolute;
+  bottom:0px;
+}
+
+.table {
+  position:absolute;
+  border: 1px black;
+  padding-top: 90px;
+  padding-left: 60px;
+  display: none;
+}
+
+.box {
+    padding: 2px;
+    line-height: 0px;
+}
+
+.foreground .active {
+  stroke: red;
+  stroke-width: 2.5;
+}
+
+.info {
+  text-align: right;
+}
+
+.background path {
+  fill: none;
+  stroke: #ddd;
+  shape-rendering: crispEdges;
+}
+
+.foreground path {
+  fill: none;
+  stroke: steelblue;
+}
+
+.axis text {
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+}
+
+.clickable {
+    font-weight: bold;
+    text-decoration: underline;
+    font-color: #056925;
+    cursor: pointer;
+}
+
+#parallel_title {
+  text-align: center;
+}
+
+#tooltip {
+    position: absolute;
+    text-align: center;
+    width: 200px;
+    height: 70px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background-color: rgba(220,220,220,0.5);
+    color: red;
+              margin: 10px;
+              height: 25px;
+        -webkit-border-radius:10px;
+        -moz-border-radius:10px;
+    border-radius:10px;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+th {
+  text-align: left;
+}
+
+th, td {
+  padding: 0 1em 0.5ex 0;
+}
+
+th.center, td.center {
+  text-align: center;
+}
+
+th.num, td.num {
+  text-align: right;
+}
+
+rect.bordered {
+  stroke: #E6E6E6;
+  stroke-width:2px;
+}
+
+text.mono {
+  font-size: 9pt;
+  font-family: Consolas, courier;
+  fill: #aaa;
+}
+
+text.days{
+  fill: black;
+}

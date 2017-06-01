@@ -1,0 +1,223 @@
+.button {
+    background-color: green;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: orange;
+}
+
+#button-f2 {
+    background-color: red;
+}
+
+.vis {
+    text-align: center;
+}
+
+.lines-f2 {
+    fill: none;
+    stroke-width: 1.5px;
+}
+
+.prox-lines {
+    fill: none;
+    stroke-width: 1.5px;
+}
+
+.f2-general {
+    stroke: steelblue;
+}
+
+.f2-zone1 {
+    stroke: #FFCC00;
+}
+
+#f2-zone1-text {
+    color: #FFCC00;
+}
+
+.f2-zone2 {
+    stroke: #FF6600;
+}
+
+#f2-zone2-text {
+    color: #FF6600;
+}
+
+.f2-zone3 {
+    stroke: #99CC00;
+}
+
+#f2-zone3-text {
+    color: #99CC00;
+}
+
+.f2-zone4 {
+    stroke: #FF9966;
+}
+
+#f2-zone4-text {
+    color: #FF9966;
+}
+
+.f2-zone5 {
+    stroke: #CC0033;
+}
+
+#f2-zone5-text {
+    color: #CC0033;
+}
+
+.f2-zone6 {
+    stroke: #CCFF33;
+}
+
+#f2-zone6-text {
+    color: #CCFF33;
+}
+
+.f2-zone7 {
+    stroke: #333300;
+}
+
+#f2-zone7-text {
+    color: #333300;
+}
+
+.f2-zone8 {
+    stroke: #FFFF00;
+}
+
+#f2-zone8-text {
+    color: #FFFF00;
+}
+
+.f2-zone9 {
+    stroke: #FF3366;
+}
+
+#f2-zone9-text {
+    color: #FF3366;
+}
+
+.f2-zone10 {
+    stroke: #FF6699;
+}
+
+#f2-zone10-text {
+    color: #FF6699;
+}
+
+.f2-zone11 {
+    stroke: #336600;
+}
+
+#f2-zone11-text {
+    color: #336600;
+}
+
+.f2-zone12a {
+    stroke: #CC99CC;
+}
+
+#f2-zone12a-text {
+    color: #CC99CC;
+}
+
+.f2-zone12b {
+    stroke: #660066;
+}
+
+#f2-zone12b-text {
+    color: #660066;
+}
+
+.f2-zone12c {
+    stroke: #FF99FF;
+}
+
+#f2-zone12c-text {
+    color: #FF99FF;
+}
+
+#f2-zone13-text {
+    color: #858585;
+}
+
+.f2-zone14 {
+    stroke: #66FFFF;
+}
+
+#f2-zone14-text {
+    color: #66FFFF;
+}
+
+.f2-zone15 {
+    stroke: #6666CC;
+}
+
+#f2-zone15-text {
+    color: #6666CC;
+}
+
+.f2-zone16 {
+    stroke: #0000FF;
+}
+
+#f2-zone16-text {
+    color: #0000FF;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.x.axis text {
+    font: 10px sans-serif;
+}
+
+.y.axis text {
+    font: 12px sans-serif;
+}
+
+.brush .extent {
+    stroke: #fff;
+    fill-opacity: .125;
+    shape-rendering: crispEdges;
+}
+
+.color1-text {
+    color: #1F77B4;
+}
+
+.color2-text {
+    color: #FF7F0E;
+}
+
+.color3-text {
+    color: #2CA02C;
+}
+
+.color4-text {
+    color: #D62728;
+}
+
+.color5-text {
+    color: #9467BD;
+}
+
+.color6-text {
+    color: #8C564B;
+}
+
+.color7-text {
+    color: #E377C2;
+}

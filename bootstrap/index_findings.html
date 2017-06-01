@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Gosia's Warriors</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="shortcut icon" href="images/warriors.ico">
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="js/d3.min.js"></script>
+        <script src="js/d3-queue.min.js"></script>
+        <script src="js/jquery-2.2.2.min.js"></script>
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/groep.png" alt="" /></span>
+							<h1 id="title">Gosia's Warriors</h1>
+							<p>VAST challenge 2016</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
+
+								Prologue's nav expects links in one of two formats:
+
+								1. Hash link (scrolls to a different section within the page)
+
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+							-->
+							<ul>
+								<li><a href="index2.html" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About the challenge</span></a></li>
+								<li><a href="graphs.html" class="skel-layers-ignoreHref"><span class="icon fa-line-chart">Graphs</span></a></li>
+								<li><a href="heatmaps.html" class="skel-layers-ignoreHref"><span class="icon fa-fire">Heatmaps</span></a></li>		
+								<li><a href="index_findings.html" class="skel-layers-ignoreHref"><span class="icon fa-balance-scale">findings</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://github.com/popoiopo/Gosia-warriors" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+                    <section id="top" class="one dark cover">
+                        <div class="container">
+                            <br />
+                            <header>
+                                <h2 class="alt"><strong>Findings of this challenge</strong> <br /> 
+                                <p class="header_info">Here we discuss all the anomalies of the dataset.</p>
+                            </header>
+                        </div>
+                    </section> 					
+
+					<!-- findings -->
+					<section id="findings" class="three">
+						<div class="container">
+
+							<center>
+				                <div id="content">
+				                    <h2>Results</h2>
+				                    <p>
+				                        Results from these linegraphs are discussed here.
+				                        When looking at the linegraphs and comparing the readings per floor or zone, patterns and anomalies can be found.
+				                        These can be used to analyze the behavior of the employees at GAStech and to evaluate the risks.
+				                        They can also be used to spot anomalies and irregularities throughout the two-week period.
+				                        Finally we can relate the patterns to the anomalies and try to explain the causes using the behavior of the employees.
+				                    </p>
+				                    <br/>
+				                    <h2>Klad</h2>
+				                    <h3>General</h3>
+				                    <p>
+				                        <b>COOL Schedule Value:</b> Constant<br/>
+				                        <b>DELI-FAN Power:</b> Staat constant aan op de zondagen, de rest van de dagen switcht dat aan/uit per dag<br/>
+				                        <b>Drybulb temperature:</b> Aan het eind van elke dag daalt deze en aan het begin van elke dag stijgt deze weer tot een maximum in het midden van de dag<br/>
+				                        <b>Loop Temp Schedule:</b> Constant<br/>
+				                        <b>HEAT Schedule Value:</b> Constant<br/>
+				                        <b>HVAC Electric Demand Power:</b> Piek in het midden van elke dag, staat in het weekend constant aan. Twee grote pieken op 7 en 8 juni, en het tweede weekend (11 en 12 juni) zijn de readings veel hoger dan in het eerste weekend.<br/>
+				                        <b>Pump Power:</b> Constant<br/>
+				                        <b>Supply Side Inlet Mass Flow Rate:</b> Constant<br/>
+				                        <b>Supply Side Inlet Temperature:</b> Is op het minimum in het midden van elke dag, in het weekend daalt deze niet zo diep als doordeweeks<br/>
+				                        <b>Supply Side Outlet Temperature:</b> Is een harmonica op elke dag, in het weekend is het niet zo wild als doordeweeks<br/>
+				                        <b>Total Electric Demand Power:</b> Heeft elke dag een piek in het midden van de dag, geen pieken in het weekend, twee grote pieken op 7 en 8 juni, het tweede weekend is een grotere kam dan het eerste weekend<br/>
+				                        <b>Water Heater Gas Rate:</b> Erg veel variatie elke dag, op zaterdag is het minder dan doordeweeks en op zondag zijn er nog minder pieken<br/>
+				                        <b>Water Heater Setpoint:</b> Constant<br/>
+				                        <b>Water Heater Tank Temperature:</b> Is een harmonica op elke dag, in het weekend is het niet zo wild als doordeweeks<br/>
+				                        <b>Wind Direction:</b> Fluctueert rond de 50 elke dag, op 5 juni zit de windrichting rond de 0/360 graden, net als op 8 en 9 juni<br/>
+				                        <b>Wind Speed:</b> In het midden van de metingen is de windsnelheid lager dan aan het begin en eind<br/>
+				                        De waarden van <b>Supply Side Outlet Temperature</b> zijn exact hetzelfde als de waarden van <b>Water Heater Tank Temperature</b>.<br/>
+				                        De waarden van <b>Loop Temp Schedule</b> en <b>Water Heater Setpoint</b> zijn beide constant 60 over de twee weken.
+				                    </p>
+				                    <h3>Floor 1</h3>
+				                    <p>
+				                        <b>Lights Power:</b> Zones 3, 8a en 8b zijn constant, ook over de weekenden. De overige zones fluctueren veel doordeweeks maar zijn 0 in de weekenden. Zone 2 heeft alleen een enkele piek op 31 mei midden op de dag en voor de rest is het overal 0<br/>
+				                        <b>Equipment Power:</b> Zones 3, 8a, 8b zijn constant, ook over de weekenden. De overige zones fluctueren veel doordeweeks maar zijn laag (~100/150) in de weekenden. Zone 2 heeft alleen een enkele piek op 31 mei midden op de dag en voor de rest is het overal constant iets onder de 400<br/>
+				                        <b>Thermostat Temp:</b> Zones 1, 4 en 7 zijn meestal outliers, lager en hoger dan de minima en maxima van de andere lijnen.<br/>
+				                        <b>Thermostat Heating Setpoint:</b> Zones 2, 4 en 7 zijn de enige zones die de andere niet volgen<br/>
+				                        <b>Thermostat Cooling Setpoint:</b> Zones 2, 4 en 7 zijn de enige zones die de andere niet volgen<br/>
+				                        <b>VAV Availability Manager Night Cycle Control Status:</b> Is hoog aan het begin van elke dag, constant aan op elke zondag<br/>
+				                        <b>VAV_SYS SUPPLY FAN:Fan Power:</b> Fluctueert veel, maar is constant op 5 juni (zon), begin van 7 en 8 juni (di/woe), begin van 11 juni (za) en 12 juni geheel (zon)<br/>
+				                        <b>BATH_EXHAUST:Fan Power:</b> Is alleen aan aan het begin van elke dag, maar op zondag de hele dag<br/>
+				                        <b>VAV REHEAT Damper Position:</b> Zone 1 fluctueert veel meer dan de andere zones, zone 3 bereikt hogere waarden veel vaker dan andere zones<br/>
+				                        <b>REHEAT COIL Power:</b> Zone 2 heeft als enige niet-0 waarden vóór 7 juni (op 1 juni), twee grote pieken op 7 en 8 juni, verder begin van 11 juni en constant aan op 12 juni, met zone 1 veel hogere waarden dan andere zones<br/>
+				                        <b>VAV_SYS HEATING COIL Power:</b> Constant 0<br/>
+				                        <b>VAV_SYS Outdoor Air Flow Fraction:</b> Meestal aan aan het begin van de dag met fluctuaties tot het begin van de volgende dag, geen fluctuaties op 7 en 8 juni. Constant aan op zondagen, met veel hogere waarden op de eerste dan de tweede zondag<br/>
+				                        <b>VAV_SYS Outdoor Air Mass Flow Rate:</b> Meestal aan aan het begin van de dag zonder fluctuaties tot begin van de volgende dag, fluctuaties op 7 en 8 juni. Constant aan op zondagen<br/>
+				                        <b>VAV_SYS COOLING COIL Power:</b> Fluctuaties met pieken op midden van de dag, constant aan aan het begin van 7 en 8 juni, constant aan op zondagen met pieken in het midden van de dag, tweede zondag hogere waarden dan eerste zondag<br/>
+				                        <b>VAV_SYS AIR LOOP INLET Temperature:</b> Ongeveer constant rond 25, behalve op 7 en 8 juni met uitschieters naar boven rond de 30<br/>
+				                        <b>VAV_SYS AIR LOOP INLET Mass Flow Rate:</b> Fluctuaties in het midden van elke dag, behalve op 7 en 8 juni waar het constant aan was aan het begin van de dag. Lage waarden op eerste zondag, hoge constante waarden op tweede zondag<br/>
+				                        <b>VAV_SYS SUPPLY FAN OUTLET Temperature:</b> Constant hoog aan het begin van de dag, behalve op zondagen waar die constant hoog is<br/>
+				                        <b>VAV_SYS SUPPLY FAN OUTLET Mass Flow Rate:</b> Fluctuaties in het midden van elke dag, behalve op 7 en 8 juni waar het constant aan was aan het begin van de dag. Eerste zondag geen fluctuaties met een piek in het midden van de dag, tweede zondag constant hoog<br/>
+				                        <b>RETURN OUTLET CO2 Concentration:</b> Zone 1 veel fluctuaties, zone 2 relatief laag met pieken op 7 en 8 juni, zone 3 relatief laag met een grote piek op 5 juni en pieken op 7 en 8 juni, zone 4 relatief laag met piek op 6 juni en grote pieken op 7 en 8 juni, zone 5 grote piek over 5 en 6 juni, twee pieken op 7 en 8 juni, zone 7 relatief laag met piek op 6 juni en twee pieken op 7 en 8 juni, zone 8a laagst, zone 8b relatief laag<br/>
+				                        <b>SUPPLY INLET Temperature:</b> Zone 2 twee pieken op 1 en 10 juni, voor de rest alle zones alleen hoog aan het begin van de dag, met op zondagen constant hoog. Op 7 en 8 juni grote pieken voor alle zones<br/>
+				                        <b>SUPPLY INLET Mass Flow Rate:</b> Zone 1 fluctueert het meest, gevolgd door zone 7. De metingen zijn hoog gedurende de hele dag, behalve op 7 en 8 juni waar het alleen het begin van de dag is. Op zondagen zijn de metingen hoog, de eerste zondag constant of met een piek en de tweede zondag constant hoog. Zone 5 meestal laag gedurende de dag, zone 2 heeft een piek midden op de dag<br/>
+				                        <b>Mechanical Ventilation Mass Flow Rate:</b> Pieken in het midden van de dag, behalve op zaterdagen want dan is het constant in het midden en op zondagen is het constant gedurende de hele dag, eerste zondag lager dan tweede zondag. Twee erg scherpe pieken op 7 en 8 juni
+				                    </p>
+				                    <h3>Floor 2</h3>
+				                    <p>
+				                        <b>Lights Power:</b> Zone 12a/b/c constant aan over de twee weken. Metingen zijn hoog gedurende de hele dag behalve aan het begin en 0 in weekenden. Zone 2 en 6 hebben de hoogste metingen, met 4 en 9 daarna, gevolgd door 10, 14 en 16, de rest zit rond de 300<br/>
+				                        <b>Equipment Power:</b> Beetje hetzelfde verhaal als bij lights power<br/>
+				                        <b>Thermostat Temp:</b> Zone 8 heeft twee pieken naar boven op 2 en 8 juni. In weekenden constant, op 7 en 8 juni constant hoger dan het gemiddelde<br/>
+				                        <b>Thermostat Heating Setpoint:</b> Twee hoge constante stukken van alle zones op 7 en 8 juni, sommige zones ook al op 6 juni<br/>
+				                        <b>Thermostat Cooling Setpoint:</b> Twee hoge constante stukken van alle zones op 7 en 8 juni, sommige zones ook al op 6 juni<br/>
+				                        <b>VAV_SYS SUPPLY FAN:Fan Power:</b> Fluctuaties gedurende de gehele dag, behalve op 7 en 8 juni waar het alleen aan het begin van de dag constant hoog is. In weekenden constant, eerste weekend laag constant, tweede weekend hoog constant<br/>
+				                        <b>BATH_EXHAUST:Fan Power:</b> Constant hoog aan het begin van de dag, behalve in weekenden waar het constant hoog is<br/>
+				                        <b>VAV REHEAT Damper Position:</b> Fluctuaties gedurence de gehele dag, behalve op 7 en 8 juni waar het alleen aan het begin van de dag constant hoog is. In weekenden constant, eerste weekend laag constant met piek in het midden, tweede weekend hoog constant<br/>
+				                        <b>REHEAT COIL Power:</b> Piek op 1 en 6 juni, hoge pieken 7 en 8 juni, tweede weekend hoge golvende waarden<br/>
+				                        <b>VAV_SYS HEATING COIL Power:</b> Constant 0<br/>
+				                        <b>VAV_SYS Outdoor Air Flow Fraction:</b> Constant hoog aan het begin van de dag en constant laag de rest van de dag, behalve op 7 en 8 juni waar het net andersom is. Op zondag constant gedurende de hele dag, eerste zondag constant hoog, tweede zondag constant laag<br/>
+				                        <b>VAV_SYS Outdoor Air Mass Flow Rate:</b> Elke dag begin van de dag constant hoog, behalve op zondagen waar het constant hoog is<br/>
+				                        <b>VAV_SYS COOLING COIL Power:</b> Elke dag aan het begin van de dag constant laag met hoge fluctuaties de rest van de dag, behalve op 7, 8 en 9 juni waar er aan het begin van de dag een hoge piek is. Op zondagen constant gedurende de hele dag, eerste zondag constant laag en tweede zondag constant hoog<br/>
+				                        <b>VAV_SYS AIR LOOP INLET Temperature:</b> Volgt een vast patroon behalve op 7 en 8 juni waar er constante uitschieters naar boven zijn<br/>
+				                        <b>VAV_SYS AIR LOOP INLET Mass Flow Rate:</b> Constant laag aan het begin van de dag met fluctuaties naar boven gedurende de rest van de dag, behalve op 7 en 8 juni waar het net andersom is. Op zondagen constant, eerste zondag constant laag, tweede constant hoog. Tweede zaterdag ook constant hoog<br/>
+				                        <b>VAV_SYS SUPPLY FAN OUTLET Temperature:</b> Constant hoog aan het begin van elke dag, behalve op zondagen waar het gedurende de hele dag constant hoog is<br/>
+				                        <b>VAV_SYS SUPPLY FAN OUTLET Mass Flow Rate:</b> Hetzelfde verhaal als VAV_SYS AIR LOOP INLET Mass Flow Rate<br/>
+				                        <b>RETURN OUTLET CO2 Concentration:</b> Twee grote pieken op 7 en 8 juni, zone 12a/b/c zijn meestal laag, zone 14 hoger dan andere zones overal<br/>
+				                        <b>SUPPLY INLET Temperature:</b> Constant hoog aan het begin van elke dag, behalve op 7 en 8 juni waar er grote pieken omhoog zijn. Op zondagen is het constant hoog gedurende de hele dag<br/>
+				                        <b>SUPPLY INLET Mass Flow Rate:</b> Constant hoog aan het begin van elke dag met pieken in het midden van de dag, behalve op 7 en 8 juni waar het in het midden van de dag constant laag is. Op zondagen constant, eerste zondag constant laag, tweede zondag constant hoog, tweede zaterdag gedurende de hele dag constant hoog<br/>
+				                        <b>VAV Availability Manager Night Cycle Control Status:</b> Aan het begin van elke dag constant hoog, de rest van de dag 0, behalve op zondagen waar het constant hoog is gedurende de hele dag
+				                    </p>
+				                    <h3>Floor 3</h3>
+				                    <p>
+				                        <b>Lights Power:</b> Zone 11a/b/c constant over de gehele twee weken, de rest alleen constant in het midden van doordeweekse dagen. Zone 10 een kleine piek de eerste zondag, zone 2 een hoge piek de tweede zaterdag en zone 8 twee pieken op de tweede zaterdag en zondag<br/>
+				                        <b>Equipment Power:</b> Zone 9 gebruikt zo'n 15x meer power dan andere zones op deze verdieping, zone 11a/b/c constant over de twee weken, de andere zones plateaus in het midden van doordeweekse dagen en in het weekend 0. Zone 2 nog een plateau de tweede zaterdag en zone 8 twee plateaus de tweede zaterdag en zondag<br/>
+				                        <b>Thermostat Temp:</b> Zone 9 is normaal best laag maar op 7 en 8 juni springt het omhoog en is dan hoger dan alle andere zones. Zone 1 heeft vanaf 2 juni een vast patroon van plateau hoog/laag. De rest is constant vrij-zon en de andere dagen fluctueert het een beetje rond het gemiddelde<br/>
+				                        <b>Thermostat Heating Setpoint:</b> Zone 1 heeft vanaf 2 juni een vast patroon van plateau hoog/laag. Zone 9 is constant, behalve op 7 en 8 juni waar deze hoog/laag plateaut. De rest lijken op elkaar<br/>
+				                        <b>Thermostat Cooling Setpoint:</b> Hetzelfde als bij Thermostat Heating Setpoint<br/>
+				                        <b>VAV_SYS SUPPLY FAN:Fan Power:</b> Pieken in het midden van de dag, behalve op 7 en 8 juni waar de metingen laag zijn en fluctueren. In het weekend zijn de metingen constant hoog<br/>
+				                        <b>BATH_EXHAUST:Fan Power:</b> Constant hoog in het midden van de dag, behalve op zondag waar die 0 is<br/>
+				                        <b>VAV REHEAT Damper Position:</b> Veel fluctuatie, op 7 juni veranderen de metingen wel erg vaak van laag naar hoog, in weekenden zijn metingen constant hoog<br/>
+				                        <b>REHEAT COIL Power:</b> Zone 1 volgt vanaf 2 juni een vast patroon, de rest is meestal 0, behalve in weekenden waar het erg fluctueert en op 7 en 8 juni met twee scherpe pieken. Zone 8 heeft dan nog extra pieken op 9 juni<br/>
+				                        <b>VAV_SYS HEATING COIL Power:</b> Constant 0<br/>
+				                        <b>VAV_SYS Outdoor Air Flow Fraction:</b> Constant hoog in het midden van de dag, behalve op 7 en 8 juni waar het er fluctueert, op zondagen 0<br/>
+				                        <b>VAV_SYS Outdoor Air Mass Flow Rate:</b> Constant hoog in het midden van de dag, op zondagen 0<br/>
+				                        <b>VAV_SYS COOLING COIL Power:</b> Pieken in het midden van de dag, behalve op 7 en 8 juni waar er uitschieters omlaag zijn. In weekenden geen pieken en kleine fluctuaties rond het gemiddelde<br/>
+				                        <b>VAV_SYS AIR LOOP INLET Temperature:</b> Constant, behalve op 7 en 8 juni waar er uitschieters omhoog zijn en fluctueren<br/>
+				                        <b>VAV_SYS AIR LOOP INLET Mass Flow Rate:</b> Pieken in het midden van de dag, behalve op 7 en 8 juni waar er uitschieters omlaag zijn met fluctuaties. In weekenden constant hoog<br/>
+				                        <b>VAV_SYS SUPPLY FAN OUTLET Temperature:</b> Constant, behalve op 7 en 8 juni waar er uitschieters en flcutuaties omhoog zijn<br/>
+				                        <b>VAV_SYS SUPPLY FAN OUTLET Mass Flow Rate:</b> Pieken in het midden van de dag, behalve op 7 en 8 juni waar er uitschieters omlaag zijn met fluctuaties. In weekenden constant hoog<br/>
+				                        <b>RETURN OUTLET CO2 Concentration:</b> Kleine pieken in het midden van de dag, behalve op 7 en 8 juni waar de pieken veel groter worden en zone 11b helemaal gek wordt. In weekenden constant laag<br/>
+				                        <b>SUPPLY INLET Temperature:</b> Zone 1 vanaf 2 juni een vast patroon. De rest constant, behalve in weekenden waar er fluctuaties zijn en op 7 en 8 juni waar er uitschieters en fluctuaties omhoog zijn. Zones 5 en 6 nog een scherpe piek op 1 juni, zone 8 nog twee grote pieken omhoog op 9 juni<br/>
+				                        <b>SUPPLY INLET Mass Flow Rate:</b> Zone 9 uitschieter, normaal constant, donderdag op vrijdag plateau omhoog en weekenden constant hoog. Op 7 en 8 juni uitschieters en fluctuaties omlaag. De andere zones zijn constant laag aan het begin van de dag en fluctueren gedurende de rest van de dag, behalve op 7 en 8 juni waar er uitschieters en fluctuaties omhoog zijn. In weekenden constant hoog<br/>
+				                        <b>VAV Availability Manager Night Cycle Control Status:</b> Constant 0
+				                    </p>
+				                    <h3>Fixed prox</h3>
+				                    <p>
+				                        <b>General</b>: Zaterdag en zondag zijn er weinig/geen metingen. Op 4 juni was er geen enkele meting voor alle verdiepingen.<br/>
+				                        <b>Floor 1</b>: In zone 1, 2 en 4 zijn veel meer metingen dan de rest van de zones. Voor zone 5 is er slechts een kleine meting in het midden van 31 mei. Zone 7 wordt de hele tijd na het midden van de dag bezocht.<br/>
+				                        <b>Floor 2</b>: In zone 1, 4, 6 en 7 zijn veel meer metingen dan de rest van de zones. Zone 2 heeft 3 pieken en 2 dalen per doordeweekse dag en er zijn ongeveer 2 keer zo veel metingen als in zone 3. Voor zone 5 zijn er 0 metingen. 4 juni is er geen enkele meting.<br/>
+				                        <b>Floor 3</b>: Voor zone 1, 4 en de serverroom zijn de meeste metingen. Voor de serverroom is er een grote piek midden op 10 juni en er zijn daarna geen metingen meer. Voor zone 5 zijn er geen metingen. Zone 2, 3 en 6 volgen dezelfde trend, alleen zijn de waarden voor zone 3 hoger dan zone 6. 4 juni is er geen enkele meting. Aan het begin van 2 juni hebben zone 1 en 4 een grote piek.
+				                    </p>
+				                    <br/>
+				                    <h2>Patterns</h2>
+				                    <p>
+				                        Patterns
+				                    </p>
+				                    <br/>
+				                    <h2>Anomalies</h2>
+				                    <p>
+				                        Anomalies
+				                    </p>
+				                    <br/>
+				                    <h2>Relationships</h2>
+				                    <p>
+				                        Relationships
+				                    </p>
+				                </div>
+				            </center>
+						</div>
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Bas Châtel, Leslie dao, Wessel de Jong</li><li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script src="js/dimensions.js"></script>
+
+	</body>
+</html>
